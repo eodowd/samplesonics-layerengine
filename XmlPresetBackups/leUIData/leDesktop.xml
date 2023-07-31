@@ -47,7 +47,7 @@
              height="40.0" saveInPreset="0" text="Settings" itemColour="0"
              bgColour="0" itemColour2="0" textColour="16777215" filmstripImage="{PROJECT_FOLDER}btn1.png">
     <Component type="ScriptLabel" id="ScriptLabel6" x="0.0" y="0.0" width="120.0"
-               height="40.0" parentComponent="Button5" text="Settings" itemColour2="1118481"
+               height="40.0" parentComponent="Button5" text="Output" itemColour2="1118481"
                editable="0"/>
   </Component>
   <Component type="ScriptSlider" id="ScriptSlider10" x="980.0" y="22.0" width="10.0"
@@ -60,7 +60,7 @@
              itemColour="0" itemColour2="0" FontSize="10.0"/>
   <Component type="ScriptPanel" id="Panel0" x="30.0" y="90.0" width="960.0"
              height="480.0" borderRadius="0.0" bgColour="16777215" itemColour="0"
-             itemColour2="0" textColour="16777215">
+             itemColour2="0" textColour="16777215" visible="0">
     <Component type="ScriptAudioWaveform" id="ScriptAudioWaveform1" x="0.0"
                y="0.0" width="960.0" height="130.0" parentComponent="Panel0"
                processorId="Audio Loop Player1" textColour="0" bgColour="0"
@@ -452,7 +452,7 @@
   </Component>
   <Component type="ScriptPanel" id="Panel4" x="20.0" y="80.0" width="980.0"
              height="500.0" borderRadius="0.0" bgColour="16777215" itemColour="0"
-             itemColour2="0" textColour="16777215" visible="0">
+             itemColour2="0" textColour="16777215">
     <Component type="ScriptFloatingTile" id="ScriptFloatingTile4" x="30.0" y="50.0"
                width="160.0" height="100.0" parentComponent="Panel4" ContentType="Waveform"
                bgColour="0" itemColour="1627389951" itemColour2="2164260863"
@@ -460,19 +460,23 @@
     <Component type="ScriptSlider" id="ScriptSlider23" x="220.0" y="40.0" width="50.0"
                height="40.0" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
                scaleFactor="0.5" numStrips="31.0" processorId="Waveform Generator1"
-               parameterId="OctaveTranspose1"/>
+               parameterId="OctaveTranspose1" middlePosition="0.0" mode="Discrete"
+               stepSize="1.0" max="12.0" min="-12.0"/>
     <Component type="ScriptSlider" id="ScriptSlider24" x="220.0" y="80.0" width="50.0"
                height="40.0" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
                scaleFactor="0.5" numStrips="31.0" processorId="Waveform Generator1"
-               parameterId="Pan1"/>
+               parameterId="Pan1" mode="Pan" min="-100.0" max="100.0" stepSize="1.0"
+               suffix="L" middlePosition="0.0"/>
     <Component type="ScriptSlider" id="ScriptSlider25" x="220.0" y="120.0" width="40.0"
                height="40.0" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
                scaleFactor="0.5" numStrips="31.0" processorId="Waveform Generator1"
-               parameterId="PulseWidth1"/>
+               parameterId="PulseWidth1" mode="NormalizedPercentage" suffix="%"
+               middlePosition="0.5"/>
     <Component type="ScriptSlider" id="ScriptSlider45" x="220.0" y="160.0" width="40.0"
                height="40.0" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
                scaleFactor="0.5" numStrips="31.0" processorId="Waveform Generator1"
-               parameterId="Detune1"/>
+               parameterId="Detune1" middlePosition="0.0" mode="Pan" stepSize="1.0"
+               min="-100.0" max="100.0" suffix="L"/>
     <Component type="ScriptComboBox" id="ScriptComboBox4" x="30.0" y="160.0"
                width="160.0" height="30.0" max="9" parentComponent="Panel4"
                processorId="Waveform Generator1" parameterId="WaveForm1" items="Sine&#10;Triangle&#10;Saw&#10;Square&#10;Noise&#10;Triangle 2&#10;Square 2&#10;Trapezoid 1&#10;Trapezoid 2&#10;"
@@ -493,26 +497,30 @@
                width="160.0" height="30.0" max="9" parentComponent="Panel4"
                itemColour2="1118481" itemColour="3355443" items="Sine&#10;Triangle&#10;Saw&#10;Square&#10;Noise&#10;Triangle 2&#10;Square 2&#10;Trapezoid 1&#10;Trapezoid 2&#10;"
                processorId="Waveform Generator1" parameterId="WaveForm2"/>
-    <Component type="ScriptLabel" id="ScriptLabel58" x="10.0" y="30.0" width="200.0"
-               height="40.0" parentComponent="Panel4" text="WAVE 1"/>
-    <Component type="ScriptLabel" id="ScriptLabel59" x="10.0" y="300.0" width="200.0"
-               height="40.0" parentComponent="Panel4" text="WAVE 2"/>
+    <Component type="ScriptLabel" id="ScriptLabel58" x="10.0" y="10.0" width="200.0"
+               height="40.0" parentComponent="Panel4" text="WAVE 1" editable="0"/>
+    <Component type="ScriptLabel" id="ScriptLabel59" x="10.0" y="290.0" width="200.0"
+               height="40.0" parentComponent="Panel4" text="WAVE 2" editable="0"/>
     <Component type="ScriptSlider" id="ScriptSlider46" x="220.0" y="320.0" width="50.0"
                height="40.0" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
                numStrips="31.0" scaleFactor="0.5" processorId="Waveform Generator1"
-               parameterId="OctaveTranspose2"/>
+               parameterId="OctaveTranspose2" mode="Discrete" stepSize="1.0"
+               middlePosition="0.0" max="12.0" min="-12.0"/>
     <Component type="ScriptSlider" id="ScriptSlider47" x="220.0" y="360.0" width="50.0"
                height="40.0" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
                numStrips="31.0" scaleFactor="0.5" processorId="Waveform Generator1"
-               parameterId="Pan2"/>
+               parameterId="Pan2" mode="Pan" min="-100.0" max="100.0" stepSize="1.0"
+               suffix="L" middlePosition="0.0"/>
     <Component type="ScriptSlider" id="ScriptSlider48" x="220.0" y="400.0" width="50.0"
                height="40.0" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
                numStrips="31.0" scaleFactor="0.5" processorId="Waveform Generator1"
-               parameterId="PulseWidth2"/>
+               parameterId="PulseWidth2" mode="NormalizedPercentage" suffix="%"
+               middlePosition="0.5"/>
     <Component type="ScriptSlider" id="ScriptSlider49" x="220.0" y="440.0" width="50.0"
                height="40.0" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
                numStrips="31.0" scaleFactor="0.5" processorId="Waveform Generator1"
-               parameterId="Detune2"/>
+               parameterId="Detune2" mode="Pan" stepSize="1.0" middlePosition="0.5"
+               max="100.0" min="-100.0"/>
     <Component type="ScriptLabel" id="ScriptLabel60" x="260.0" y="300.0" width="100.0"
                height="70.0" parentComponent="Panel4" text="Octave"/>
     <Component type="ScriptLabel" id="ScriptLabel61" x="260.0" y="330.0" width="100.0"
@@ -521,38 +529,99 @@
                height="100.0" parentComponent="Panel4" text="Pulse Width"/>
     <Component type="ScriptLabel" id="ScriptLabel63" x="260.0" y="410.0" width="100.0"
                height="100.0" parentComponent="Panel4" text="Detune"/>
-    <Component type="ScriptImage" id="ScriptImage3" x="20.0" y="200.0" width="350.0"
-               height="100.0" parentComponent="Panel4" fileName="{PROJECT_FOLDER}temp.png"/>
-    <Component type="ScriptSlider" id="ScriptSlider50" x="205.0" y="214.0" width="70.0"
+    <Component type="ScriptSlider" id="ScriptSlider50" x="20.0" y="220.0" width="70.0"
                height="70.0" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31.0" processorId="Waveform Generator1" parameterId="Mix"/>
-    <Component type="ScriptLabel" id="ScriptLabel64" x="20.0" y="210.0" width="170.0"
-               height="70.0" parentComponent="Panel4" fontSize="15.0" text="MIX"
+               numStrips="31.0" processorId="Waveform Generator1" parameterId="Mix"
+               defaultValue="0.5"/>
+    <Component type="ScriptLabel" id="ScriptLabel64" x="90.0" y="210.0" width="40"
+               height="70" parentComponent="Panel4" fontSize="15.0" text="MIX"
                alignment="right" editable="0"/>
-    <Component type="ScriptFloatingTile" id="ScriptFloatingTile11" x="390.0"
-               y="10.0" width="590" height="470" parentComponent="Panel4" ContentType="DraggableFilterPanel"
+    <Component type="ScriptFloatingTile" id="ScriptFloatingTile11" x="360.0"
+               y="20.0" width="620" height="200" parentComponent="Panel4" ContentType="DraggableFilterPanel"
                bgColour="0" itemColour="2164260863" itemColour2="0" Data="{&#10;  &quot;ProcessorId&quot;: &quot;parameter&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"/>
-    <Component type="ScriptFloatingTile" id="ScriptFloatingTile12" x="20.0"
-               y="220.0" width="130" height="50" parentComponent="Panel4" ContentType="AHDSRGraph"
+    <Component type="ScriptFloatingTile" id="ScriptFloatingTile12" x="150.0"
+               y="220.0" width="220" height="50" parentComponent="Panel4" ContentType="AHDSRGraph"
                bgColour="0" itemColour="452984831" itemColour2="2164260863"
                textColour="0" Data="{&#10;  &quot;ProcessorId&quot;: &quot;AHDSR Envelope3&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"/>
-    <Component type="ScriptButton" id="ScriptButton4" x="20.0" y="0.0" width="120"
-               height="40" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}btn1.png"
-               processorId="Waveform Generator1" parameterId="Enabled"/>
-    <Component type="ScriptLabel" id="ScriptLabel65" x="30.0" y="-30.0" width="100"
-               height="100" parentComponent="Panel4" text="Enable/Disable" editable="0"/>
+    <Component type="ScriptSlider" id="ScriptSlider51" x="410.0" y="230.0" width="50"
+               height="50" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
+               numStrips="31" scaleFactor="0.5" processorId="AHDSR Envelope3"
+               parameterId="Attack" mode="Time" max="20000.0" stepSize="1.0"
+               suffix=" ms" middlePosition="999.9999999999998"/>
+    <Component type="ScriptSlider" id="ScriptSlider52" x="480.0" y="230.0" width="50"
+               height="50" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
+               numStrips="31" scaleFactor="0.5" processorId="AHDSR Envelope3"
+               parameterId="Hold" mode="Time" max="20000.0" stepSize="1.0" suffix=" ms"
+               middlePosition="999.9999999999998"/>
+    <Component type="ScriptSlider" id="ScriptSlider53" x="550.0" y="230.0" width="50"
+               height="50" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
+               numStrips="31" scaleFactor="0.5" processorId="AHDSR Envelope3"
+               parameterId="Decay" mode="Time" max="20000.0" stepSize="1.0"
+               suffix=" ms" middlePosition="999.9999999999998"/>
+    <Component type="ScriptSlider" id="ScriptSlider54" x="620.0" y="230.0" width="50"
+               height="50" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
+               numStrips="31" scaleFactor="0.5" processorId="AHDSR Envelope3"
+               parameterId="Sustain" mode="Decibel" min="-100.0" max="0.0" stepSize="0.1"
+               suffix=" dB" middlePosition="-18.0"/>
+    <Component type="ScriptSlider" id="ScriptSlider55" x="690.0" y="230.0" width="49"
+               height="48" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
+               numStrips="31" scaleFactor="0.5" processorId="AHDSR Envelope3"
+               parameterId="Release" mode="Time" max="20000.0" stepSize="1.0"
+               suffix=" ms" middlePosition="999.9999999999998"/>
+    <Component type="ScriptLabel" id="ScriptLabel65" x="450.0" y="200.0" width="20"
+               height="100" parentComponent="Panel4" text="A" editable="0"/>
+    <Component type="ScriptLabel" id="ScriptLabel66" x="520.0" y="200.0" width="20"
+               height="100" parentComponent="Panel4" text="H" editable="0"/>
+    <Component type="ScriptLabel" id="ScriptLabel67" x="590.0" y="200.0" width="20"
+               height="100" parentComponent="Panel4" text="D" editable="0"/>
+    <Component type="ScriptLabel" id="ScriptLabel68" x="660.0" y="200.0" width="20"
+               height="100" parentComponent="Panel4" text="S" editable="0"/>
+    <Component type="ScriptLabel" id="ScriptLabel69" x="730.0" y="200.0" width="20"
+               height="100" parentComponent="Panel4" text="R" editable="0"/>
+    <Component type="ScriptSlider" id="ScriptSlider56" x="850.0" y="230.0" width="40"
+               height="50" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
+               numStrips="31" scaleFactor="0.5" processorId="Waveform Generator1"
+               parameterId="Gain" mode="NormalizedPercentage" suffix="%" middlePosition="0.5"/>
+    <Component type="ScriptLabel" id="ScriptLabel70" x="880.0" y="230.0" width="100"
+               height="40" parentComponent="Panel4" text="Waveform Gain" editable="0"/>
+    <Component type="ScriptSlider" id="ScriptSlider57" x="850.0" y="370.0" width="40"
+               height="40" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
+               numStrips="31" processorId="Simple Reverb2" parameterId="WetLevel"
+               scaleFactor="0.5"/>
+    <Component type="ScriptSlider" id="ScriptSlider58" x="850.0" y="300.0" width="40"
+               height="40" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
+               numStrips="31" processorId="Simple Reverb2" parameterId="RoomSize"
+               scaleFactor="0.5"/>
+    <Component type="ScriptLabel" id="ScriptLabel71" x="880.0" y="340.0" width="90"
+               height="100" parentComponent="Panel4" text="Reverb Size" editable="0"/>
+    <Component type="ScriptLabel" id="ScriptLabel72" x="880.0" y="270.0" width="100"
+               height="100" parentComponent="Panel4" text="Reverb Wet"/>
   </Component>
   <Component type="ScriptPanel" id="Panel5" x="30.0" y="90.0" width="960.0"
              height="480.0" borderRadius="0.0" bgColour="16777215" itemColour="0"
              itemColour2="0" textColour="16777215" visible="0">
-    <Component type="ScriptFloatingTile" id="ScriptFloatingTile7" x="0.0" y="0.0"
-               width="960.0" height="480.0" ContentType="CustomSettings" bgColour="4278190080"
-               itemColour="0" itemColour2="0" Data="{&#10;  &quot;Driver&quot;: true,&#10;  &quot;Device&quot;: true,&#10;  &quot;Output&quot;: true,&#10;  &quot;BufferSize&quot;: true,&#10;  &quot;SampleRate&quot;: true,&#10;  &quot;GlobalBPM&quot;: true,&#10;  &quot;StreamingMode&quot;: true,&#10;  &quot;ScaleFactor&quot;: true,&#10;  &quot;VoiceAmountMultiplier&quot;: true,&#10;  &quot;ClearMidiCC&quot;: true,&#10;  &quot;SampleLocation&quot;: true,&#10;  &quot;DebugMode&quot;: true,&#10;  &quot;UseOpenGL&quot;: true,&#10;  &quot;ScaleFactorList&quot;: [&#10;    0.5,&#10;    0.75,&#10;    1.0,&#10;    1.25,&#10;    1.5,&#10;    2.0&#10;  ]&#10;}"
-               parentComponent="Panel5"/>
-    <Component type="ScriptImage" id="ScriptImage2" x="0.0" y="20.0" width="130.0"
+    <Component type="ScriptImage" id="ScriptImage2" x="820.0" y="400.0" width="130.0"
                height="70.0" parentComponent="Panel5" fileName="{PROJECT_FOLDER}gplv3.png"/>
+    <Component type="ScriptSlider" id="ScriptSlider59" x="10.0" y="170.0" width="30"
+               height="300" parentComponent="Panel5" style="Vertical" itemColour="3831480259"
+               itemColour2="0"/>
+    <Component type="ScriptSlider" id="ScriptSlider60" x="50.0" y="170.0" width="30"
+               height="300" parentComponent="Panel5" style="Vertical" itemColour="3831480259"
+               itemColour2="0"/>
+    <Component type="ScriptSlider" id="ScriptSlider61" x="90.0" y="170.0" width="30"
+               height="300" parentComponent="Panel5" style="Vertical" itemColour="3831480259"
+               itemColour2="0"/>
+    <Component type="ScriptSlider" id="ScriptSlider62" x="130.0" y="170.0" width="30"
+               height="300" parentComponent="Panel5" style="Vertical" itemColour="3831480259"
+               itemColour2="0"/>
+    <Component type="ScriptSlider" id="ScriptSlider63" x="170.0" y="170.0" width="30"
+               height="300" parentComponent="Panel5" style="Vertical" itemColour="3831480259"
+               itemColour2="0"/>
   </Component>
   <Component type="ScriptLabel" id="logo" x="50.0" y="22.0" width="120.0"
              height="30.0" text="LayerEngine" itemColour2="1118481" fontName="Calibri"
              editable="0" alignment="left" fontSize="27.0"/>
+  <Component type="ScriptFloatingTile" id="ScriptFloatingTile7" x="20.0" y="70.0"
+             width="320" height="20" ContentType="TooltipPanel" bgColour="3684408"
+             itemColour="872415231" itemColour2="0" textColour="3439329279"/>
 </ContentProperties>
