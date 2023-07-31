@@ -3,8 +3,8 @@
 <ProjectSettings>
   <Name value="LayerEngine"/>
   <Version value="1.0.0"/>
-  <Description value=""/>
-  <BundleIdentifier value="com.myCompany.product"/>
+  <Description value="A sample based granular engine"/>
+  <BundleIdentifier value="com.samplesonics.layerengine"/>
   <PluginCode value="Abcd"/>
   <EmbedAudioFiles value="Yes"/>
   <EmbedImageFiles value="Yes"/>
@@ -25,8 +25,8 @@
   <EnableSoundGeneratorsFX value="No"/>
   <VST3Support value="1"/>
   <UseRawFrontend value="No"/>
-  <ExpansionType value="Disabled"/>
-  <EncryptionKey value=""/>
+  <ExpansionType value="FilesOnly"/>
+  <EncryptionKey value="1234"/>
   <LinkExpansionsToProject value="No"/>
   <ReadOnlyFactoryPresets value="No"/>
   <ForceStereoOutput value="No"/>
