@@ -13,42 +13,42 @@
              bgColour="0" itemColour2="0" textColour="16777215" filmstripImage="{PROJECT_FOLDER}btn1.png">
     <Component type="ScriptLabel" id="ScriptLabel1" x="0.0" y="0.0" width="120.0"
                height="40.0" parentComponent="Button0" text="Layer1" itemColour2="1118481"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="17.0"/>
   </Component>
   <Component type="ScriptButton" id="Button1" x="270.0" y="20.0" width="110.0"
              height="40.0" saveInPreset="0" text="Layer 2" itemColour="0"
              bgColour="0" itemColour2="0" textColour="16777215" filmstripImage="{PROJECT_FOLDER}btn1.png">
     <Component type="ScriptLabel" id="ScriptLabel2" x="0.0" y="0.0" width="110.0"
                height="40.0" parentComponent="Button1" itemColour2="1118481"
-               text="Layer2" editable="0"/>
+               text="Layer2" editable="0" fontName="Heebo-Light" fontSize="17.0"/>
   </Component>
   <Component type="ScriptButton" id="Button2" x="390.0" y="20.0" width="110.0"
              height="40.0" saveInPreset="0" text="Gran 1" itemColour="0" bgColour="0"
              itemColour2="0" textColour="16777215" filmstripImage="{PROJECT_FOLDER}btn1.png">
     <Component type="ScriptLabel" id="ScriptLabel3" x="0.0" y="0.0" width="110.0"
                height="40.0" parentComponent="Button2" text="Grain1" editable="0"
-               itemColour2="1118481"/>
+               itemColour2="1118481" fontName="Heebo-Light" fontSize="17.0"/>
   </Component>
   <Component type="ScriptButton" id="Button3" x="510.0" y="20.0" width="120.0"
              height="40.0" saveInPreset="0" text="Gran 2" itemColour="0" bgColour="0"
              itemColour2="0" textColour="16777215" filmstripImage="{PROJECT_FOLDER}btn1.png">
     <Component type="ScriptLabel" id="ScriptLabel4" x="0.0" y="0.0" width="120.0"
                height="40.0" parentComponent="Button3" text="Grain2" editable="0"
-               itemColour2="1118481"/>
+               itemColour2="1118481" fontName="Heebo-Light" fontSize="17.0"/>
   </Component>
   <Component type="ScriptButton" id="Button4" x="630.0" y="20.0" width="120.0"
              height="40.0" saveInPreset="0" text="FX" itemColour="0" bgColour="0"
              itemColour2="0" textColour="16777215" filmstripImage="{PROJECT_FOLDER}btn1.png">
     <Component type="ScriptLabel" id="ScriptLabel5" x="0.0" y="0.0" width="110.0"
                height="40.0" parentComponent="Button4" text="Waveform" itemColour2="1118481"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="17.0"/>
   </Component>
   <Component type="ScriptButton" id="Button5" x="750.0" y="20.0" width="120.0"
              height="40.0" saveInPreset="0" text="Settings" itemColour="0"
              bgColour="0" itemColour2="0" textColour="16777215" filmstripImage="{PROJECT_FOLDER}btn1.png">
     <Component type="ScriptLabel" id="ScriptLabel6" x="0.0" y="0.0" width="120.0"
                height="40.0" parentComponent="Button5" text="Output" itemColour2="1118481"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="17.0"/>
   </Component>
   <Component type="ScriptSlider" id="ScriptSlider10" x="980.0" y="22.0" width="10.0"
              height="30.0" style="Vertical" itemColour2="1118481" textColour="16777215"
@@ -60,7 +60,7 @@
              itemColour="0" itemColour2="0" FontSize="10.0"/>
   <Component type="ScriptPanel" id="Panel0" x="30.0" y="90.0" width="960.0"
              height="480.0" borderRadius="0.0" bgColour="16777215" itemColour="0"
-             itemColour2="0" textColour="16777215" visible="0">
+             itemColour2="0" textColour="16777215">
     <Component type="ScriptAudioWaveform" id="ScriptAudioWaveform1" x="0.0"
                y="0.0" width="960.0" height="130.0" parentComponent="Panel0"
                processorId="Audio Loop Player1" textColour="0" bgColour="0"
@@ -93,29 +93,31 @@
                suffix=" ms" middlePosition="1000.0" defaultValue="1.0"/>
     <Component type="ScriptLabel" id="ScriptLabel21" x="50.0" y="140.0" width="100.0"
                height="40.0" parentComponent="Panel0" editable="0" alignment="left"
-               text="Attack"/>
+               text="Attack" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel22" x="50.0" y="190.0" width="90.0"
                height="40.0" parentComponent="Panel0" editable="0" alignment="left"
-               text="Hold"/>
+               text="Hold" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel23" x="50.0" y="240.0" width="90.0"
                height="40.0" parentComponent="Panel0" editable="0" alignment="left"
-               text="Decay"/>
+               text="Decay" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel24" x="50.0" y="300.0" width="110.0"
                height="20.0" parentComponent="Panel0" editable="0" alignment="left"
-               text="Sustain"/>
+               text="Sustain" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel25" x="50.0" y="340.0" width="110.0"
                height="40.0" parentComponent="Panel0" editable="0" alignment="left"
-               text="Release"/>
+               text="Release" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptFloatingTile" id="ScriptFloatingTile6" x="280.0"
                y="150.0" width="680.0" height="240.0" parentComponent="Panel0"
                ContentType="DraggableFilterPanel" bgColour="0" itemColour="2164260863"
-               itemColour2="855638016" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Parametriq EQ1LOOPPLAYER&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"/>
+               itemColour2="855638016" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Parametriq EQ1LOOPPLAYER&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+               Font="Heebo-Light" FontSize="12.0"/>
     <Component type="ScriptButton" id="ScriptButton1" x="120.0" y="140.0" width="160.0"
                height="40.0" parentComponent="Panel0" itemColour="3355443" bgColour="16777215"
                itemColour2="1118481" filmstripImage="{PROJECT_FOLDER}btn1.png"
                processorId="Audio Loop Player1" parameterId="LoopEnabled">
       <Component type="ScriptLabel" id="ScriptLabel31" x="7.0" y="0.0" width="100.0"
-                 height="40.0" parentComponent="ScriptButton1" text="Loop" editable="0"/>
+                 height="40.0" parentComponent="ScriptButton1" text="Loop" editable="0"
+                 fontName="Heebo-Light" fontSize="19.0"/>
     </Component>
     <Component type="ScriptButton" id="ScriptButton2" x="120.0" y="190.0" width="110.0"
                height="40.0" parentComponent="Panel0" itemColour="3355443" bgColour="16777215"
@@ -123,7 +125,7 @@
                processorId="Audio Loop Player1" parameterId="PitchTracking">
       <Component type="ScriptLabel" id="ScriptLabel32" x="3.727272748947144" y="0.0"
                  width="110.0" height="40.0" parentComponent="ScriptButton2" text="Pitch Tracking"
-                 editable="0"/>
+                 editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     </Component>
     <Component type="ScriptButton" id="ScriptButton3" x="120.0" y="240.0" width="160.0"
                height="40.0" parentComponent="Panel0" itemColour="3355443" bgColour="16777215"
@@ -131,20 +133,21 @@
                processorId="Audio Loop Player1" parameterId="Reversed">
       <Component type="ScriptLabel" id="ScriptLabel33" x="3.0" y="0.0" width="110.0"
                  height="40.0" parentComponent="ScriptButton3" text="Reverse"
-                 editable="0"/>
+                 editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     </Component>
     <Component type="ScriptComboBox" id="ScriptComboBox2" x="130.0" y="290.0"
                width="100.0" height="30.0" parentComponent="Panel0" itemColour2="1118481"
                itemColour="3355443" processorId="Audio Loop Player1" parameterId="SyncMode"
                items="Free Running&#10;1 Beat&#10;2 Beats&#10;1 Bar&#10;2 Bar&#10;4 Bar&#10;&#10;"
-               max="6" bgColour="218103807"/>
+               max="6" bgColour="218103807" fontName="Heebo-Light" fontSize="23.0"/>
     <Component type="ScriptSlider" id="ScriptSlider26" x="130.0" y="340.0" width="40.0"
                height="50.0" parentComponent="Panel0" filmstripImage="{PROJECT_FOLDER}konb.png"
                numStrips="31.0" scaleFactor="0.5" processorId="Audio Loop Player1"
                parameterId="SampleStartMod" mode="Frequency" min="20.0" max="20000.0"
                stepSize="1.0" suffix=" Hz" middlePosition="1500.0"/>
     <Component type="ScriptLabel" id="ScriptLabel34" x="170.0" y="330.0" width="90.0"
-               height="60.0" parentComponent="Panel0" text="Random Start"/>
+               height="60.0" parentComponent="Panel0" text="Random Start" fontName="Heebo-Light"
+               fontSize="19.0"/>
     <Component type="ScriptFloatingTile" id="ScriptFloatingTile5" x="0.0" y="410.0"
                width="280.0" height="70.0" parentComponent="Panel0" ContentType="AHDSRGraph"
                bgColour="0" itemColour="1711276031" itemColour2="16777215" textColour="0"
@@ -159,9 +162,11 @@
                parameterId="Balance" mode="Pan" min="-100.0" max="100.0" stepSize="1.0"
                suffix="L" middlePosition="0.0"/>
     <Component type="ScriptLabel" id="ScriptLabel35" x="690.0" y="410.0" width="100.0"
-               height="100.0" parentComponent="Panel0" text="Layer1 Gain" editable="0"/>
+               height="100.0" parentComponent="Panel0" text="Layer1 Gain" editable="0"
+               fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel36" x="830.0" y="410.0" width="90.0"
-               height="100.0" parentComponent="Panel0" text="Layer1 Pan" editable="0"/>
+               height="100.0" parentComponent="Panel0" text="Layer1 Pan" editable="0"
+               fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptSlider" id="ScriptSlider29" x="290.0" y="440.0" width="60.0"
                height="50.0" parentComponent="Panel0" filmstripImage="{PROJECT_FOLDER}konb.png"
                numStrips="31.0" scaleFactor="0.5" processorId="Parametriq EQ1LOOPPLAYER"
@@ -177,11 +182,14 @@
                numStrips="31.0" scaleFactor="0.5" processorId="Parametriq EQ1LOOPPLAYER"
                parameterId="Q"/>
     <Component type="ScriptLabel" id="ScriptLabel37" x="330.0" y="440.0" width="60.0"
-               height="40.0" parentComponent="Panel0" text="EQ Freq" editable="0"/>
+               height="40.0" parentComponent="Panel0" text="EQ Freq" editable="0"
+               fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel38" x="450.0" y="440.0" width="60.0"
-               height="40.0" parentComponent="Panel0" text="EQ Gain" editable="0"/>
+               height="40.0" parentComponent="Panel0" text="EQ Gain" editable="0"
+               fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel39" x="570.0" y="440.0" width="70.0"
-               height="40.0" parentComponent="Panel0" text="EQ Q" editable="0"/>
+               height="40.0" parentComponent="Panel0" text="EQ Q" editable="0"
+               fontName="Heebo-Light" fontSize="19.0"/>
   </Component>
   <Component type="ScriptPanel" id="Panel1" x="30.0" y="90.0" width="960.0"
              height="480.0" borderRadius="0.0" bgColour="16777215" itemColour="0"
@@ -222,19 +230,19 @@
                Data="{&#10;  &quot;ProcessorId&quot;: &quot;AHDSR Envelope2&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"/>
     <Component type="ScriptLabel" id="ScriptLabel40" x="50.0" y="130.0" width="60.0"
                height="60.0" parentComponent="Panel1" text="Attack" alignment="left"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel41" x="50.0" y="190.0" width="90.0"
                height="40.0" parentComponent="Panel1" alignment="left" text="Hold"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel42" x="50.0" y="240.0" width="90.0"
                height="40.0" parentComponent="Panel1" alignment="left" text="Decay"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel43" x="50.0" y="290.0" width="90.0"
                height="40.0" parentComponent="Panel1" alignment="left" text="Sustain"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel44" x="50.0" y="340.0" width="90.0"
                height="40.0" parentComponent="Panel1" alignment="left" text="Release"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptButton" id="ScriptButton5" x="120.0" y="140.0" width="120.0"
                height="40.0" parentComponent="Panel1" filmstripImage="{PROJECT_FOLDER}btn1.png"
                processorId="Audio Loop Player2" parameterId="LoopEnabled"/>
@@ -255,14 +263,17 @@
                parameterId="SampleStartMod" mode="Frequency" min="20.0" max="20000.0"
                stepSize="1.0" suffix=" Hz" middlePosition="1500.0"/>
     <Component type="ScriptLabel" id="ScriptLabel45" x="123.0" y="140.0" width="110.0"
-               height="40.0" parentComponent="Panel1" text="Loop" editable="0"/>
+               height="40.0" parentComponent="Panel1" text="Loop" editable="0"
+               fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel46" x="128.0" y="190.0" width="100.0"
                height="40.0" parentComponent="Panel1" text="Pitch Tracking"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel47" x="119.0" y="240.0" width="120.0"
-               height="40.0" parentComponent="Panel1" text="Reverse" editable="0"/>
+               height="40.0" parentComponent="Panel1" text="Reverse" editable="0"
+               fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel48" x="160.0" y="340.0" width="110.0"
-               height="40.0" parentComponent="Panel1" editable="0" text="Random Start"/>
+               height="40.0" parentComponent="Panel1" editable="0" text="Random Start"
+               fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptFloatingTile" id="ScriptFloatingTile10" x="280.0"
                y="160.0" width="680.0" height="230.0" parentComponent="Panel1"
                ContentType="DraggableFilterPanel" bgColour="0" itemColour="2164260863"
@@ -288,15 +299,20 @@
                numStrips="31.0" scaleFactor="0.5" processorId="Audio Loop Player2"
                parameterId="Balance"/>
     <Component type="ScriptLabel" id="ScriptLabel49" x="320.0" y="430.0" width="80.0"
-               height="60.0" parentComponent="Panel1" text="EQ Freq"/>
+               height="60.0" parentComponent="Panel1" text="EQ Freq" fontName="Heebo-Light"
+               fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel50" x="440.0" y="430.0" width="80.0"
-               height="60.0" parentComponent="Panel1" text="EQ Gain"/>
+               height="60.0" parentComponent="Panel1" text="EQ Gain" fontName="Heebo-Light"
+               fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel51" x="570.0" y="440.0" width="70.0"
-               height="40.0" parentComponent="Panel1" text="EQ Q"/>
+               height="40.0" parentComponent="Panel1" text="EQ Q" fontName="Heebo-Light"
+               fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel52" x="690.0" y="420.0" width="100.0"
-               height="80.0" parentComponent="Panel1" text="Layer2 Gain"/>
+               height="80.0" parentComponent="Panel1" text="Layer2 Gain" fontName="Heebo-Light"
+               fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel53" x="830.0" y="410.0" width="90.0"
-               height="100.0" parentComponent="Panel1" text="Layer2 Pan"/>
+               height="100.0" parentComponent="Panel1" text="Layer2 Pan" fontName="Heebo-Light"
+               fontSize="19.0"/>
   </Component>
   <Component type="ScriptPanel" id="Panel2" x="30.0" y="90.0" width="970.0"
              height="480.0" borderRadius="0.0" bgColour="16777215" itemColour="0"
@@ -352,31 +368,31 @@
                numStrips="31.0" scaleFactor="0.5" showValuePopup="Right"/>
     <Component type="ScriptLabel" id="ScriptLabel7" x="40.0" y="150.0" width="50.0"
                height="40.0" parentComponent="Panel2" text="Pitch" alignment="left"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel8" x="40.0" y="200.0" width="80.0"
                height="40.0" parentComponent="Panel2" text="Grain Size" alignment="left"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel9" x="40.0" y="250.0" width="80.0"
                height="40.0" parentComponent="Panel2" text="Density" alignment="left"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel10" x="40.0" y="300.0" width="80.0"
                height="40.0" parentComponent="Panel2" text="Spread" alignment="left"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel11" x="40.0" y="350.0" width="80.0"
                height="40.0" parentComponent="Panel2" text="Detune" alignment="left"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel12" x="170.0" y="200.0" width="90.0"
                height="40.0" parentComponent="Panel2" alignment="left" text="Freq"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel13" x="170.0" y="250.0" width="90.0"
                height="40.0" parentComponent="Panel2" alignment="left" text="Fade In"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel14" x="170.0" y="300.0" width="90.0"
                height="40.0" parentComponent="Panel2" alignment="left" text="Smooothing"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel15" x="170.0" y="340.0" width="90.0"
                height="50.0" parentComponent="Panel2" alignment="left" text="Phase offset"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptSlider" id="ScriptSlider11" x="280.0" y="150.0" width="40.0"
                height="40.0" parentComponent="Panel2" filmstripImage="{PROJECT_FOLDER}konb.png"
                numStrips="31.0" scaleFactor="0.5" processorId="Script FX1" parameterId="a"/>
@@ -394,19 +410,19 @@
                numStrips="31.0" scaleFactor="0.5" processorId="Script FX1" parameterId="R"/>
     <Component type="ScriptLabel" id="ScriptLabel16" x="320.0" y="150.0" width="90.0"
                height="40.0" parentComponent="Panel2" alignment="left" text="Attack"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel17" x="320.0" y="200.0" width="100.0"
                height="40.0" parentComponent="Panel2" alignment="left" text="Hold"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel18" x="320.0" y="250.0" width="90.0"
                height="40.0" parentComponent="Panel2" alignment="left" text="Sustain"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel19" x="320.0" y="300.0" width="110.0"
                height="40.0" parentComponent="Panel2" alignment="left" text="Decay"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel20" x="320.0" y="350.0" width="100.0"
                height="40.0" parentComponent="Panel2" alignment="left" text="Release"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptFloatingTile" id="ScriptFloatingTile3" x="420.0"
                y="150.0" width="550.0" height="230.0" parentComponent="Panel2"
                ContentType="DraggableFilterPanel" bgColour="0" itemColour="2164260863"
@@ -416,7 +432,7 @@
                itemColour="3355443" itemColour2="1118481" bgColour="2533359615"/>
     <Component type="ScriptLabel" id="ScriptLabel54" x="-20.0" y="390.0" width="120.0"
                height="40.0" parentComponent="Panel2" text="Velocity Table"
-               editable="0"/>
+               editable="0" fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptSlider" id="ScriptSlider43" x="650.0" y="440.0" width="50.0"
                height="40.0" parentComponent="Panel2" filmstripImage="{PROJECT_FOLDER}konb.png"
                numStrips="31.0" scaleFactor="0.5" processorId="Simple Gain2"
@@ -426,9 +442,11 @@
                numStrips="31.0" scaleFactor="0.5" processorId="Simple Gain2"
                parameterId="Balance"/>
     <Component type="ScriptLabel" id="ScriptLabel55" x="690.0" y="410.0" width="90.0"
-               height="100.0" parentComponent="Panel2" text="Grain1 Gain"/>
+               height="100.0" parentComponent="Panel2" text="Grain1 Gain" fontName="Heebo-Light"
+               fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel56" x="820.0" y="430.0" width="100.0"
-               height="60.0" parentComponent="Panel2" text="Grain1 Pan"/>
+               height="60.0" parentComponent="Panel2" text="Grain1 Pan" fontName="Heebo-Light"
+               fontSize="19.0"/>
     <Component type="ScriptSlider" id="ScriptSlider21" x="390.0" y="440.0" width="50.0"
                height="50.0" parentComponent="Panel2" filmstripImage="{PROJECT_FOLDER}konb.png"
                numStrips="31.0" scaleFactor="0.5" processorId="Simple Reverb1"
@@ -438,9 +456,11 @@
                numStrips="31.0" scaleFactor="0.5" processorId="Simple Reverb1"
                parameterId="RoomSize"/>
     <Component type="ScriptLabel" id="ScriptLabel26" x="420.0" y="410.0" width="100.0"
-               height="100.0" parentComponent="Panel2" text="Reverb Wet"/>
+               height="100.0" parentComponent="Panel2" text="Reverb Wet" fontName="Heebo-Light"
+               fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel27" x="550.0" y="410.0" width="100.0"
-               height="100.0" parentComponent="Panel2" text="Reverb Size"/>
+               height="100.0" parentComponent="Panel2" text="Reverb Size" fontName="Heebo-Light"
+               fontSize="19.0"/>
   </Component>
   <Component type="ScriptPanel" id="Panel3" x="30.0" y="90.0" width="970.0"
              height="490.0" borderRadius="0.0" bgColour="16777215" itemColour="0"
@@ -452,7 +472,7 @@
   </Component>
   <Component type="ScriptPanel" id="Panel4" x="20.0" y="80.0" width="980.0"
              height="500.0" borderRadius="0.0" bgColour="16777215" itemColour="0"
-             itemColour2="0" textColour="16777215">
+             itemColour2="0" textColour="16777215" visible="0">
     <Component type="ScriptFloatingTile" id="ScriptFloatingTile4" x="30.0" y="50.0"
                width="160.0" height="100.0" parentComponent="Panel4" ContentType="Waveform"
                bgColour="0" itemColour="1627389951" itemColour2="2164260863"
@@ -482,13 +502,17 @@
                processorId="Waveform Generator1" parameterId="WaveForm1" items="Sine&#10;Triangle&#10;Saw&#10;Square&#10;Noise&#10;Triangle 2&#10;Square 2&#10;Trapezoid 1&#10;Trapezoid 2&#10;"
                itemColour="3355443" itemColour2="1118481"/>
     <Component type="ScriptLabel" id="ScriptLabel28" x="260.0" y="30.0" width="100.0"
-               height="50.0" parentComponent="Panel4" text="Octave" editable="0"/>
+               height="50.0" parentComponent="Panel4" text="Octave" editable="0"
+               fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel29" x="260.0" y="70.0" width="100.0"
-               height="50.0" parentComponent="Panel4" text="Pan" editable="0"/>
+               height="50.0" parentComponent="Panel4" text="Pan" editable="0"
+               fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel30" x="260.0" y="110.0" width="100.0"
-               height="50.0" parentComponent="Panel4" text="Pulse Width" editable="0"/>
+               height="50.0" parentComponent="Panel4" text="Pulse Width" editable="0"
+               fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel57" x="260.0" y="150.0" width="100.0"
-               height="50.0" parentComponent="Panel4" text="Detune" editable="0"/>
+               height="50.0" parentComponent="Panel4" text="Detune" editable="0"
+               fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptFloatingTile" id="ScriptFloatingTile8" x="30.0" y="330.0"
                width="160.0" height="100.0" parentComponent="Panel4" ContentType="Waveform"
                bgColour="0" itemColour="1627389951" itemColour2="2164260863"
@@ -498,9 +522,11 @@
                itemColour2="1118481" itemColour="3355443" items="Sine&#10;Triangle&#10;Saw&#10;Square&#10;Noise&#10;Triangle 2&#10;Square 2&#10;Trapezoid 1&#10;Trapezoid 2&#10;"
                processorId="Waveform Generator1" parameterId="WaveForm2"/>
     <Component type="ScriptLabel" id="ScriptLabel58" x="10.0" y="10.0" width="200.0"
-               height="40.0" parentComponent="Panel4" text="WAVE 1" editable="0"/>
+               height="40.0" parentComponent="Panel4" text="WAVE 1" editable="0"
+               fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel59" x="10.0" y="290.0" width="200.0"
-               height="40.0" parentComponent="Panel4" text="WAVE 2" editable="0"/>
+               height="40.0" parentComponent="Panel4" text="WAVE 2" editable="0"
+               fontName="Heebo-Light" fontSize="19.0"/>
     <Component type="ScriptSlider" id="ScriptSlider46" x="220.0" y="320.0" width="50.0"
                height="40.0" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
                numStrips="31.0" scaleFactor="0.5" processorId="Waveform Generator1"
@@ -522,106 +548,120 @@
                parameterId="Detune2" mode="Pan" stepSize="1.0" middlePosition="0.5"
                max="100.0" min="-100.0"/>
     <Component type="ScriptLabel" id="ScriptLabel60" x="260.0" y="300.0" width="100.0"
-               height="70.0" parentComponent="Panel4" text="Octave"/>
+               height="70.0" parentComponent="Panel4" text="Octave" fontName="Heebo-Light"
+               fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel61" x="260.0" y="330.0" width="100.0"
-               height="100.0" parentComponent="Panel4" text="Pan"/>
+               height="100.0" parentComponent="Panel4" text="Pan" fontName="Heebo-Light"
+               fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel62" x="260.0" y="370.0" width="100.0"
-               height="100.0" parentComponent="Panel4" text="Pulse Width"/>
+               height="100.0" parentComponent="Panel4" text="Pulse Width" fontName="Heebo-Light"
+               fontSize="19.0"/>
     <Component type="ScriptLabel" id="ScriptLabel63" x="260.0" y="410.0" width="100.0"
-               height="100.0" parentComponent="Panel4" text="Detune"/>
+               height="100.0" parentComponent="Panel4" text="Detune" fontName="Heebo-Light"
+               fontSize="19.0"/>
     <Component type="ScriptSlider" id="ScriptSlider50" x="20.0" y="220.0" width="70.0"
                height="70.0" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
                numStrips="31.0" processorId="Waveform Generator1" parameterId="Mix"
                defaultValue="0.5"/>
-    <Component type="ScriptLabel" id="ScriptLabel64" x="90.0" y="210.0" width="40"
-               height="70" parentComponent="Panel4" fontSize="15.0" text="MIX"
-               alignment="right" editable="0"/>
+    <Component type="ScriptLabel" id="ScriptLabel64" x="90.0" y="210.0" width="40.0"
+               height="70.0" parentComponent="Panel4" fontSize="19.0" text="MIX"
+               alignment="right" editable="0" fontName="Heebo-Light"/>
     <Component type="ScriptFloatingTile" id="ScriptFloatingTile11" x="360.0"
-               y="20.0" width="620" height="200" parentComponent="Panel4" ContentType="DraggableFilterPanel"
-               bgColour="0" itemColour="2164260863" itemColour2="0" Data="{&#10;  &quot;ProcessorId&quot;: &quot;parameter&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"/>
+               y="20.0" width="620.0" height="200.0" parentComponent="Panel4"
+               ContentType="DraggableFilterPanel" bgColour="0" itemColour="2164260863"
+               itemColour2="0" Data="{&#10;  &quot;ProcessorId&quot;: &quot;parameter&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"/>
     <Component type="ScriptFloatingTile" id="ScriptFloatingTile12" x="150.0"
-               y="220.0" width="220" height="50" parentComponent="Panel4" ContentType="AHDSRGraph"
-               bgColour="0" itemColour="452984831" itemColour2="2164260863"
-               textColour="0" Data="{&#10;  &quot;ProcessorId&quot;: &quot;AHDSR Envelope3&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"/>
-    <Component type="ScriptSlider" id="ScriptSlider51" x="410.0" y="230.0" width="50"
-               height="50" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31" scaleFactor="0.5" processorId="AHDSR Envelope3"
+               y="220.0" width="220.0" height="50.0" parentComponent="Panel4"
+               ContentType="AHDSRGraph" bgColour="0" itemColour="452984831"
+               itemColour2="2164260863" textColour="0" Data="{&#10;  &quot;ProcessorId&quot;: &quot;AHDSR Envelope3&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"/>
+    <Component type="ScriptSlider" id="ScriptSlider51" x="410.0" y="230.0" width="50.0"
+               height="50.0" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
+               numStrips="31.0" scaleFactor="0.5" processorId="AHDSR Envelope3"
                parameterId="Attack" mode="Time" max="20000.0" stepSize="1.0"
-               suffix=" ms" middlePosition="999.9999999999998"/>
-    <Component type="ScriptSlider" id="ScriptSlider52" x="480.0" y="230.0" width="50"
-               height="50" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31" scaleFactor="0.5" processorId="AHDSR Envelope3"
+               suffix=" ms" middlePosition="1000.0"/>
+    <Component type="ScriptSlider" id="ScriptSlider52" x="480.0" y="230.0" width="50.0"
+               height="50.0" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
+               numStrips="31.0" scaleFactor="0.5" processorId="AHDSR Envelope3"
                parameterId="Hold" mode="Time" max="20000.0" stepSize="1.0" suffix=" ms"
-               middlePosition="999.9999999999998"/>
-    <Component type="ScriptSlider" id="ScriptSlider53" x="550.0" y="230.0" width="50"
-               height="50" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31" scaleFactor="0.5" processorId="AHDSR Envelope3"
+               middlePosition="1000.0"/>
+    <Component type="ScriptSlider" id="ScriptSlider53" x="550.0" y="230.0" width="50.0"
+               height="50.0" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
+               numStrips="31.0" scaleFactor="0.5" processorId="AHDSR Envelope3"
                parameterId="Decay" mode="Time" max="20000.0" stepSize="1.0"
-               suffix=" ms" middlePosition="999.9999999999998"/>
-    <Component type="ScriptSlider" id="ScriptSlider54" x="620.0" y="230.0" width="50"
-               height="50" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31" scaleFactor="0.5" processorId="AHDSR Envelope3"
-               parameterId="Sustain" mode="Decibel" min="-100.0" max="0.0" stepSize="0.1"
+               suffix=" ms" middlePosition="1000.0"/>
+    <Component type="ScriptSlider" id="ScriptSlider54" x="620.0" y="230.0" width="50.0"
+               height="50.0" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
+               numStrips="31.0" scaleFactor="0.5" processorId="AHDSR Envelope3"
+               parameterId="Sustain" mode="Decibel" min="-100.0" max="0.0" stepSize="0.1000000014901161"
                suffix=" dB" middlePosition="-18.0"/>
-    <Component type="ScriptSlider" id="ScriptSlider55" x="690.0" y="230.0" width="49"
-               height="48" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31" scaleFactor="0.5" processorId="AHDSR Envelope3"
+    <Component type="ScriptSlider" id="ScriptSlider55" x="690.0" y="230.0" width="49.0"
+               height="48.0" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
+               numStrips="31.0" scaleFactor="0.5" processorId="AHDSR Envelope3"
                parameterId="Release" mode="Time" max="20000.0" stepSize="1.0"
-               suffix=" ms" middlePosition="999.9999999999998"/>
-    <Component type="ScriptLabel" id="ScriptLabel65" x="450.0" y="200.0" width="20"
-               height="100" parentComponent="Panel4" text="A" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel66" x="520.0" y="200.0" width="20"
-               height="100" parentComponent="Panel4" text="H" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel67" x="590.0" y="200.0" width="20"
-               height="100" parentComponent="Panel4" text="D" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel68" x="660.0" y="200.0" width="20"
-               height="100" parentComponent="Panel4" text="S" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel69" x="730.0" y="200.0" width="20"
-               height="100" parentComponent="Panel4" text="R" editable="0"/>
-    <Component type="ScriptSlider" id="ScriptSlider56" x="850.0" y="230.0" width="40"
-               height="50" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31" scaleFactor="0.5" processorId="Waveform Generator1"
+               suffix=" ms" middlePosition="1000.0"/>
+    <Component type="ScriptLabel" id="ScriptLabel65" x="450.0" y="200.0" width="20.0"
+               height="100.0" parentComponent="Panel4" text="A" editable="0"
+               fontName="Heebo-Light" fontSize="19.0"/>
+    <Component type="ScriptLabel" id="ScriptLabel66" x="520.0" y="200.0" width="20.0"
+               height="100.0" parentComponent="Panel4" text="H" editable="0"
+               fontName="Heebo-Light" fontSize="19.0"/>
+    <Component type="ScriptLabel" id="ScriptLabel67" x="590.0" y="200.0" width="20.0"
+               height="100.0" parentComponent="Panel4" text="D" editable="0"
+               fontName="Heebo-Light" fontSize="19.0"/>
+    <Component type="ScriptLabel" id="ScriptLabel68" x="660.0" y="200.0" width="20.0"
+               height="100.0" parentComponent="Panel4" text="S" editable="0"
+               fontName="Heebo-Light" fontSize="19.0"/>
+    <Component type="ScriptLabel" id="ScriptLabel69" x="730.0" y="200.0" width="20.0"
+               height="100.0" parentComponent="Panel4" text="R" editable="0"
+               fontName="Heebo-Light" fontSize="19.0"/>
+    <Component type="ScriptSlider" id="ScriptSlider56" x="850.0" y="230.0" width="40.0"
+               height="50.0" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
+               numStrips="31.0" scaleFactor="0.5" processorId="Waveform Generator1"
                parameterId="Gain" mode="NormalizedPercentage" suffix="%" middlePosition="0.5"/>
-    <Component type="ScriptLabel" id="ScriptLabel70" x="880.0" y="230.0" width="100"
-               height="40" parentComponent="Panel4" text="Waveform Gain" editable="0"/>
-    <Component type="ScriptSlider" id="ScriptSlider57" x="850.0" y="370.0" width="40"
-               height="40" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31" processorId="Simple Reverb2" parameterId="WetLevel"
+    <Component type="ScriptLabel" id="ScriptLabel70" x="880.0" y="230.0" width="100.0"
+               height="40.0" parentComponent="Panel4" text="Waveform Gain" editable="0"
+               fontName="Heebo-Light" fontSize="19.0"/>
+    <Component type="ScriptSlider" id="ScriptSlider57" x="850.0" y="370.0" width="40.0"
+               height="40.0" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
+               numStrips="31.0" processorId="Simple Reverb2" parameterId="WetLevel"
                scaleFactor="0.5"/>
-    <Component type="ScriptSlider" id="ScriptSlider58" x="850.0" y="300.0" width="40"
-               height="40" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31" processorId="Simple Reverb2" parameterId="RoomSize"
+    <Component type="ScriptSlider" id="ScriptSlider58" x="850.0" y="300.0" width="40.0"
+               height="40.0" parentComponent="Panel4" filmstripImage="{PROJECT_FOLDER}konb.png"
+               numStrips="31.0" processorId="Simple Reverb2" parameterId="RoomSize"
                scaleFactor="0.5"/>
-    <Component type="ScriptLabel" id="ScriptLabel71" x="880.0" y="340.0" width="90"
-               height="100" parentComponent="Panel4" text="Reverb Size" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel72" x="880.0" y="270.0" width="100"
-               height="100" parentComponent="Panel4" text="Reverb Wet"/>
+    <Component type="ScriptLabel" id="ScriptLabel71" x="880.0" y="340.0" width="90.0"
+               height="100.0" parentComponent="Panel4" text="Reverb Size" editable="0"
+               fontName="Heebo-Light" fontSize="19.0"/>
+    <Component type="ScriptLabel" id="ScriptLabel72" x="880.0" y="270.0" width="100.0"
+               height="100.0" parentComponent="Panel4" text="Reverb Wet" fontName="Heebo-Light"
+               fontSize="19.0"/>
   </Component>
   <Component type="ScriptPanel" id="Panel5" x="30.0" y="90.0" width="960.0"
              height="480.0" borderRadius="0.0" bgColour="16777215" itemColour="0"
              itemColour2="0" textColour="16777215" visible="0">
     <Component type="ScriptImage" id="ScriptImage2" x="820.0" y="400.0" width="130.0"
                height="70.0" parentComponent="Panel5" fileName="{PROJECT_FOLDER}gplv3.png"/>
-    <Component type="ScriptSlider" id="ScriptSlider59" x="10.0" y="170.0" width="30"
-               height="300" parentComponent="Panel5" style="Vertical" itemColour="3831480259"
+    <Component type="ScriptSlider" id="ScriptSlider59" x="10.0" y="170.0" width="30.0"
+               height="300.0" parentComponent="Panel5" style="Vertical" itemColour="3831480259"
                itemColour2="0"/>
-    <Component type="ScriptSlider" id="ScriptSlider60" x="50.0" y="170.0" width="30"
-               height="300" parentComponent="Panel5" style="Vertical" itemColour="3831480259"
+    <Component type="ScriptSlider" id="ScriptSlider60" x="50.0" y="170.0" width="30.0"
+               height="300.0" parentComponent="Panel5" style="Vertical" itemColour="3831480259"
                itemColour2="0"/>
-    <Component type="ScriptSlider" id="ScriptSlider61" x="90.0" y="170.0" width="30"
-               height="300" parentComponent="Panel5" style="Vertical" itemColour="3831480259"
+    <Component type="ScriptSlider" id="ScriptSlider61" x="90.0" y="170.0" width="30.0"
+               height="300.0" parentComponent="Panel5" style="Vertical" itemColour="3831480259"
                itemColour2="0"/>
-    <Component type="ScriptSlider" id="ScriptSlider62" x="130.0" y="170.0" width="30"
-               height="300" parentComponent="Panel5" style="Vertical" itemColour="3831480259"
+    <Component type="ScriptSlider" id="ScriptSlider62" x="130.0" y="170.0" width="30.0"
+               height="300.0" parentComponent="Panel5" style="Vertical" itemColour="3831480259"
                itemColour2="0"/>
-    <Component type="ScriptSlider" id="ScriptSlider63" x="170.0" y="170.0" width="30"
-               height="300" parentComponent="Panel5" style="Vertical" itemColour="3831480259"
+    <Component type="ScriptSlider" id="ScriptSlider63" x="170.0" y="170.0" width="30.0"
+               height="300.0" parentComponent="Panel5" style="Vertical" itemColour="3831480259"
                itemColour2="0"/>
   </Component>
   <Component type="ScriptLabel" id="logo" x="50.0" y="22.0" width="120.0"
-             height="30.0" text="LayerEngine" itemColour2="1118481" fontName="Calibri"
-             editable="0" alignment="left" fontSize="27.0"/>
+             height="30.0" text="LayerEngine" itemColour2="1118481" fontName="Heebo-Light"
+             editable="0" alignment="left" fontSize="27.0" fontStyle="Regular"/>
   <Component type="ScriptFloatingTile" id="ScriptFloatingTile7" x="20.0" y="70.0"
-             width="320" height="20" ContentType="TooltipPanel" bgColour="3684408"
-             itemColour="872415231" itemColour2="0" textColour="3439329279"/>
+             width="320.0" height="20.0" ContentType="TooltipPanel" bgColour="3684408"
+             itemColour="872415231" itemColour2="0" textColour="3439329279"
+             Font="Heebo-Light" FontSize="16.0"/>
 </ContentProperties>

@@ -28,7 +28,8 @@ inline function onButtonControl(component, value)
 onButtonControl(buttons[0], true);
 
 
-function onNoteOn()
+Engine.loadFontAs("{PROJECT_FOLDER}fonts/Heebo-Light.ttf", "Heebo-Light");
+Engine.setGlobalFont("Heebo-Light");function onNoteOn()
 {
 	
 }

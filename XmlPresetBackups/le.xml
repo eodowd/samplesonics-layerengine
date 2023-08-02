@@ -133,7 +133,7 @@
     </Processor>
     <Processor Type="AudioLooper" ID="Audio Loop Player1" Bypassed="0" Gain="1.0"
                Balance="0.0" VoiceLimit="256.0" KillFadeTime="20.0" IconColour="0"
-               SyncMode="1.0" PitchTracking="1.0" LoopEnabled="1.0" RootNote="22.0"
+               SyncMode="1.0" PitchTracking="1.0" LoopEnabled="1.0" RootNote="32.0"
                SampleStartMod="20.0" Reversed="0.0" FileName="" min="0" max="0"
                loopStart="0" loopEnd="0">
       <ChildProcessors>
