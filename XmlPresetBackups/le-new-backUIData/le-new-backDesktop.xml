@@ -3,11 +3,6 @@
 <ContentProperties DeviceType="Desktop">
   <Component type="ScriptImage" id="ScriptImage1" x="0.0" y="0.0" width="1024.0"
              height="600.0" fileName="{PROJECT_FOLDER}Untitled.png"/>
-  <Component type="ScriptFloatingTile" id="ScriptFloatingTile2" x="890.0"
-             y="22.0" width="80.0" height="30.0" ContentType="MatrixPeakMeter"
-             bgColour="0" itemColour="4294967295" itemColour2="455221794"
-             Data="{&#10;  &quot;ProcessorId&quot;: &quot;le&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false,&#10;  &quot;SegmentLedSize&quot;: 0.0,&#10;  &quot;UpDecayTime&quot;: 0.0,&#10;  &quot;DownDecayTime&quot;: 0.0,&#10;  &quot;UseSourceChannels&quot;: false,&#10;  &quot;SkewFactor&quot;: 1.0,&#10;  &quot;PaddingSize&quot;: 1.0,&#10;  &quot;ShowMaxPeak&quot;: 1.0,&#10;  &quot;ChannelIndexes&quot;: null&#10;}"
-             itemColour3="4278190080"/>
   <Component type="ScriptButton" id="Button0" x="160.0" y="20.0" width="120.0"
              height="40.0" saveInPreset="0" text="Layer 1" itemColour="0"
              bgColour="0" itemColour2="0" textColour="16777215" filmstripImage="{PROJECT_FOLDER}btn1.png"
@@ -51,14 +46,9 @@
              height="40.0" saveInPreset="0" text="Settings" itemColour="0"
              bgColour="0" itemColour2="0" textColour="16777215" filmstripImage="{PROJECT_FOLDER}btn1.png">
     <Component type="ScriptLabel" id="ScriptLabel6" x="0.0" y="-4.0" width="120.0"
-               height="40.0" parentComponent="Button5" text="Settings" itemColour2="1118481"
+               height="40.0" parentComponent="Button5" text="Mixer" itemColour2="1118481"
                editable="0" fontName="Heebo-Light" fontSize="19.0"/>
   </Component>
-  <Component type="ScriptSlider" id="ScriptSlider10" x="871.0" y="37.0" width="128.0"
-             height="10.0" style="Horizontal" itemColour2="1118481" textColour="16777215"
-             itemColour="4294967295" bgColour="2231369727" max="12.0" suffix=" dB"
-             middlePosition="0.0" processorId="Simple Gain1" parameterId="Gain"
-             showTextBox="0" stepSize="1.0" min="-100.0"/>
   <Component type="ScriptFloatingTile" id="ScriptFloatingTile1" x="20.0" y="580.0"
              width="330.0" height="20.0" ContentType="PerformanceLabel" bgColour="0"
              itemColour="0" itemColour2="0" Font="Heebo-Light"/>
@@ -69,7 +59,7 @@
                y="0.0" width="960.0" height="130.0" parentComponent="Panel0"
                processorId="Audio Loop Player1" textColour="0" bgColour="0"
                itemColour2="4294967295" itemColour="0" itemColour3="1172371"
-               showFileName="0" tooltip="Load sample here" enableRange="0"/>
+               tooltip="Load sample here" showFileName="0" enableRange="0"/>
     <Component type="ScriptSlider" id="ScriptSlider16" x="10.0" y="140.0" width="60.0"
                height="50.0" parentComponent="Panel0" filmstripImage="{PROJECT_FOLDER}konb.png"
                numStrips="31.0" scaleFactor="0.5" processorId="AHDSR Envelope1"
@@ -114,7 +104,7 @@
     <Component type="ScriptFloatingTile" id="ScriptFloatingTile6" x="280.0"
                y="150.0" width="680.0" height="240.0" parentComponent="Panel0"
                ContentType="DraggableFilterPanel" bgColour="0" itemColour="2164260863"
-               itemColour2="855638016" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Parametriq EQ1LOOPPLAYER&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+               itemColour2="855638016" Data="{&#10;  &quot;ProcessorId&quot;: &quot;eq12345&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
                Font="Heebo-Light" FontSize="12.0"/>
     <Component type="ScriptButton" id="ScriptButton1" x="120.0" y="140.0" width="160.0"
                height="40.0" parentComponent="Panel0" itemColour="3355443" bgColour="16777215"
@@ -159,64 +149,15 @@
                width="280.0" height="70.0" parentComponent="Panel0" ContentType="AHDSRGraph"
                bgColour="0" itemColour="1711276031" itemColour2="16777215" textColour="0"
                Data="{&#10;  &quot;ProcessorId&quot;: &quot;AHDSR Envelope1&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"/>
-    <Component type="ScriptSlider" id="ScriptSlider27" x="650.0" y="440.0" width="40.0"
-               height="40.0" parentComponent="Panel0" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31.0" scaleFactor="0.5" processorId="Audio Loop Player1"
-               parameterId="Gain" mode="NormalizedPercentage" suffix="%" middlePosition="0.5"
-               tooltip="Output gain for layer 1"/>
-    <Component type="ScriptSlider" id="ScriptSlider28" x="790.0" y="440.0" width="40.0"
-               height="40.0" parentComponent="Panel0" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31.0" scaleFactor="0.5" processorId="Audio Loop Player1"
-               parameterId="Balance" mode="Pan" min="-100.0" max="100.0" stepSize="1.0"
-               suffix="L" middlePosition="0.0" tooltip="Output pan for layer 1"/>
-    <Component type="ScriptLabel" id="ScriptLabel35" x="690.0" y="410.0" width="100.0"
-               height="100.0" parentComponent="Panel0" text="Layer1 Gain" editable="0"
-               fontName="Heebo-Light" fontSize="19.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel36" x="830.0" y="410.0" width="90.0"
-               height="100.0" parentComponent="Panel0" text="Layer1 Pan" editable="0"
-               fontName="Heebo-Light" fontSize="19.0"/>
-    <Component type="ScriptSlider" id="ScriptSlider29" x="290.0" y="440.0" width="60.0"
-               height="50.0" parentComponent="Panel0" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31.0" scaleFactor="0.5" processorId="Parametriq EQ1LOOPPLAYER"
-               parameterId="Freq" mode="Frequency" min="20.0" max="20000.0"
-               stepSize="1.0" suffix=" Hz" middlePosition="1500.0" defaultValue="900.0"
-               tooltip="Eq Freq"/>
-    <Component type="ScriptSlider" id="ScriptSlider30" x="410.0" y="440.0" width="50.0"
-               height="40.0" parentComponent="Panel0" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31.0" scaleFactor="0.5" processorId="Parametriq EQ1LOOPPLAYER"
-               parameterId="Gain" mode="Decibel" min="-100.0" max="100.0" stepSize="0.1000000014901161"
-               suffix=" dB" middlePosition="20.0" tooltip="Eq Gain"/>
-    <Component type="ScriptSlider" id="ScriptSlider31" x="530.0" y="440.0" width="40.0"
-               height="40.0" parentComponent="Panel0" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31.0" scaleFactor="0.5" processorId="Parametriq EQ1LOOPPLAYER"
-               parameterId="Q"/>
-    <Component type="ScriptLabel" id="ScriptLabel37" x="330.0" y="440.0" width="60.0"
-               height="40.0" parentComponent="Panel0" text="EQ Freq" editable="0"
-               fontName="Heebo-Light" fontSize="19.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel38" x="450.0" y="440.0" width="60.0"
-               height="40.0" parentComponent="Panel0" text="EQ Gain" editable="0"
-               fontName="Heebo-Light" fontSize="19.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel39" x="570.0" y="440.0" width="70.0"
-               height="40.0" parentComponent="Panel0" text="EQ Q" editable="0"
-               fontName="Heebo-Light" fontSize="19.0"/>
-    <Component type="ScriptButton" id="ScriptButton4" x="790.0" y="390.0" width="120.0"
-               height="40.0" parentComponent="Panel0" processorId="Audio Loop Player1"
-               parameterId="Enabled" filmstripImage="{PROJECT_FOLDER}btn1.png">
-      <Component type="ScriptLabel" id="ScriptLabel92" x="0.0" y="0.0" width="120.0"
-                 height="40.0" parentComponent="ScriptButton4" text="Enable" editable="0"
-                 fontName="Heebo-Light" fontSize="19.0"/>
-    </Component>
+    <Component type="ScriptFloatingTile" id="ScriptFloatingTile2" x="300.0"
+               y="410.0" width="610.0" height="70.0" parentComponent="Panel0"
+               ContentType="Keyboard" bgColour="4284769380" itemColour="452984831"
+               itemColour2="4294967295" Data="{&#10;  &quot;KeyWidth&quot;: 14.0,&#10;  &quot;DisplayOctaveNumber&quot;: true,&#10;  &quot;LowKey&quot;: 9,&#10;  &quot;HiKey&quot;: 127,&#10;  &quot;CustomGraphics&quot;: false,&#10;  &quot;DefaultAppearance&quot;: true,&#10;  &quot;BlackKeyRatio&quot;: 0.699999988079071,&#10;  &quot;ToggleMode&quot;: false,&#10;  &quot;MidiChannel&quot;: 1,&#10;  &quot;UseVectorGraphics&quot;: true,&#10;  &quot;UseFlatStyle&quot;: false,&#10;  &quot;MPEKeyboard&quot;: false,&#10;  &quot;MPEStartChannel&quot;: 2,&#10;  &quot;MPEEndChannel&quot;: 16&#10;}"
+               itemColour3="1310509276" textColour="0"/>
   </Component>
   <Component type="ScriptPanel" id="Panel1" x="30.0" y="90.0" width="960.0"
              height="480.0" borderRadius="0.0" bgColour="16777215" itemColour="0"
              itemColour2="0" textColour="16777215" visible="0">
-    <Component type="ScriptButton" id="ScriptButton8" x="790.0" y="390.0" width="130.0"
-               height="40.0" filmstripImage="{PROJECT_FOLDER}btn1.png" processorId="Audio Loop Player2"
-               parameterId="Enabled" parentComponent="Panel1">
-      <Component type="ScriptLabel" id="ScriptLabel93" x="0.0" y="0.0" width="120.0"
-                 height="40.0" parentComponent="ScriptButton8" text="Enable" editable="0"
-                 fontName="Heebo-Light" fontSize="19.0"/>
-    </Component>
     <Component type="ScriptAudioWaveform" id="ScriptAudioWaveform2" x="0.0"
                y="0.0" width="960.0" height="130.0" parentComponent="Panel1"
                processorId="Audio Loop Player2" bgColour="0" itemColour="0"
@@ -301,41 +242,10 @@
                y="160.0" width="680.0" height="230.0" parentComponent="Panel1"
                ContentType="DraggableFilterPanel" bgColour="0" itemColour="2164260863"
                itemColour2="855638016" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Parametriq EQLOOPPLAYER2&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"/>
-    <Component type="ScriptSlider" id="ScriptSlider38" x="290.0" y="440.0" width="50.0"
-               height="50.0" parentComponent="Panel1" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31.0" scaleFactor="0.5" processorId="Parametriq EQLOOPPLAYER2"
-               parameterId="Freq"/>
-    <Component type="ScriptSlider" id="ScriptSlider39" x="410.0" y="440.0" width="60.0"
-               height="60.0" parentComponent="Panel1" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31.0" scaleFactor="0.5" processorId="Parametriq EQLOOPPLAYER2"
-               parameterId="Gain"/>
-    <Component type="ScriptSlider" id="ScriptSlider40" x="530.0" y="440.0" width="60.0"
-               height="50.0" parentComponent="Panel1" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31.0" scaleFactor="0.5" processorId="Parametriq EQLOOPPLAYER2"
-               parameterId="Q"/>
-    <Component type="ScriptSlider" id="ScriptSlider41" x="650.0" y="440.0" width="50.0"
-               height="50.0" parentComponent="Panel1" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31.0" scaleFactor="0.5" processorId="Audio Loop Player2"
-               parameterId="Gain"/>
-    <Component type="ScriptSlider" id="ScriptSlider42" x="790.0" y="440.0" width="50.0"
-               height="50.0" parentComponent="Panel1" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31.0" scaleFactor="0.5" processorId="Audio Loop Player2"
-               parameterId="Balance"/>
-    <Component type="ScriptLabel" id="ScriptLabel49" x="320.0" y="430.0" width="80.0"
-               height="60.0" parentComponent="Panel1" text="EQ Freq" fontName="Heebo-Light"
-               fontSize="19.0" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel50" x="440.0" y="430.0" width="80.0"
-               height="60.0" parentComponent="Panel1" text="EQ Gain" fontName="Heebo-Light"
-               fontSize="19.0" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel51" x="570.0" y="440.0" width="70.0"
-               height="40.0" parentComponent="Panel1" text="EQ Q" fontName="Heebo-Light"
-               fontSize="19.0" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel52" x="690.0" y="420.0" width="100.0"
-               height="80.0" parentComponent="Panel1" text="Layer2 Gain" fontName="Heebo-Light"
-               fontSize="19.0" editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel53" x="830.0" y="410.0" width="90.0"
-               height="100.0" parentComponent="Panel1" text="Layer2 Pan" fontName="Heebo-Light"
-               fontSize="19.0" editable="0"/>
+    <Component type="ScriptFloatingTile" id="ScriptFloatingTile15" x="300.0"
+               y="410.0" width="610.0" height="70.0" parentComponent="Panel1"
+               ContentType="Keyboard" bgColour="4284769380" itemColour="452984831"
+               itemColour2="4294967295" textColour="0" Data="{&#10;  &quot;KeyWidth&quot;: 14.0,&#10;  &quot;DisplayOctaveNumber&quot;: false,&#10;  &quot;LowKey&quot;: 9,&#10;  &quot;HiKey&quot;: 127,&#10;  &quot;CustomGraphics&quot;: false,&#10;  &quot;DefaultAppearance&quot;: true,&#10;  &quot;BlackKeyRatio&quot;: 0.699999988079071,&#10;  &quot;ToggleMode&quot;: false,&#10;  &quot;MidiChannel&quot;: 1,&#10;  &quot;UseVectorGraphics&quot;: true,&#10;  &quot;UseFlatStyle&quot;: false,&#10;  &quot;MPEKeyboard&quot;: false,&#10;  &quot;MPEStartChannel&quot;: 2,&#10;  &quot;MPEEndChannel&quot;: 16&#10;}"/>
   </Component>
   <Component type="ScriptPanel" id="Panel2" x="30.0" y="90.0" width="970.0"
              height="480.0" borderRadius="0.0" bgColour="16777215" itemColour="0"
@@ -344,7 +254,7 @@
                y="0.0" width="960.0" height="130.0" parentComponent="Panel2"
                processorId="Script FX1" itemColour2="4294967295" itemColour="0"
                bgColour="0" textColour="0" itemColour3="1172371" showFileName="0"
-               enableRange="0" opaque="0"/>
+               opaque="0" enableRange="0"/>
     <Component type="ScriptSlider" id="ScriptSlider1" x="0.0" y="150.0" width="40.0"
                height="50.0" parentComponent="Panel2" processorId="Script FX1"
                parameterId="pitch" text="Pitch" filmstripImage="{PROJECT_FOLDER}konb.png"
@@ -352,19 +262,20 @@
     <Component type="ScriptSlider" id="ScriptSlider2" x="0.0" y="200.0" width="40.0"
                height="50.0" parentComponent="Panel2" processorId="Script FX1"
                parameterId="grainsize" text="Grain Size" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31.0" scaleFactor="0.5"/>
+               numStrips="31.0" scaleFactor="0.5" stepSize="0.1000000014901161"
+               min="20.0" max="800.0"/>
     <Component type="ScriptSlider" id="ScriptSlider3" x="0.0" y="250.0" width="40.0"
                height="50.0" parentComponent="Panel2" processorId="Script FX1"
                parameterId="density" text="Density" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31.0" scaleFactor="0.5"/>
+               numStrips="31.0" scaleFactor="0.5" stepSize="0.1000000014901161"/>
     <Component type="ScriptSlider" id="ScriptSlider4" x="0.0" y="300.0" width="40.0"
                height="50.0" parentComponent="Panel2" processorId="Script FX1"
                parameterId="spread" text="Spread" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31.0" scaleFactor="0.5"/>
+               numStrips="31.0" scaleFactor="0.5" stepSize="0.1000000014901161"/>
     <Component type="ScriptSlider" id="ScriptSlider5" x="0.0" y="350.0" width="40.0"
                height="50.0" parentComponent="Panel2" processorId="Script FX1"
                parameterId="detune" text="Detune" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31.0" scaleFactor="0.5"/>
+               numStrips="31.0" scaleFactor="0.5" stepSize="0.1000000014901161"/>
     <Component type="ScriptComboBox" id="ScriptComboBox1" x="120.0" y="150.0"
                width="120.0" height="30.0" parentComponent="Panel2" items="SINE&#10;TRIANGLE&#10;SAW&#10;SQUARE&#10;RANDOM"
                max="5" processorId="LFO Modulator1" parameterId="WaveFormType"
@@ -450,47 +361,16 @@
                y="150.0" width="550.0" height="230.0" parentComponent="Panel2"
                ContentType="DraggableFilterPanel" bgColour="0" itemColour="2164260863"
                itemColour2="855638016" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Parametriq EQ1&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false,&#10;  &quot;AllowFilterResizing&quot;: true,&#10;  &quot;AllowDynamicSpectrumAnalyser&quot;: 0,&#10;  &quot;UseUndoManager&quot;: false,&#10;  &quot;ResetOnDoubleClick&quot;: false&#10;}"/>
-    <Component type="ScriptTable" id="ScriptTable1" x="0.0" y="420.0" width="370.0"
-               height="50.0" parentComponent="Panel2" processorId="Velocity Modulator1"
+    <Component type="ScriptTable" id="ScriptTable1" x="0.0" y="420.0" width="290.0"
+               height="60.0" parentComponent="Panel2" processorId="Velocity Modulator1"
                itemColour="3355443" itemColour2="1118481" bgColour="2533359615"/>
     <Component type="ScriptLabel" id="ScriptLabel54" x="-20.0" y="390.0" width="120.0"
                height="40.0" parentComponent="Panel2" text="Velocity Table"
                editable="0" fontName="Heebo-Light" fontSize="19.0"/>
-    <Component type="ScriptSlider" id="ScriptSlider43" x="650.0" y="440.0" width="50.0"
-               height="40.0" parentComponent="Panel2" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31.0" scaleFactor="0.5" processorId="Simple Gain2"
-               parameterId="Gain"/>
-    <Component type="ScriptSlider" id="ScriptSlider44" x="790.0" y="440.0" width="50.0"
-               height="40.0" parentComponent="Panel2" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31.0" scaleFactor="0.5" processorId="Simple Gain2"
-               parameterId="Balance"/>
-    <Component type="ScriptLabel" id="ScriptLabel55" x="690.0" y="410.0" width="90.0"
-               height="100.0" parentComponent="Panel2" text="Grain1 Gain" fontName="Heebo-Light"
-               fontSize="19.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel56" x="820.0" y="430.0" width="100.0"
-               height="60.0" parentComponent="Panel2" text="Grain1 Pan" fontName="Heebo-Light"
-               fontSize="19.0"/>
-    <Component type="ScriptSlider" id="ScriptSlider21" x="390.0" y="440.0" width="50.0"
-               height="50.0" parentComponent="Panel2" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31.0" scaleFactor="0.5" processorId="Simple Reverb1"
-               parameterId="WetLevel"/>
-    <Component type="ScriptSlider" id="ScriptSlider22" x="520.0" y="440.0" width="50.0"
-               height="50.0" parentComponent="Panel2" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31.0" scaleFactor="0.5" processorId="Simple Reverb1"
-               parameterId="RoomSize"/>
-    <Component type="ScriptLabel" id="ScriptLabel26" x="420.0" y="410.0" width="100.0"
-               height="100.0" parentComponent="Panel2" text="Reverb Wet" fontName="Heebo-Light"
-               fontSize="19.0"/>
-    <Component type="ScriptLabel" id="ScriptLabel27" x="550.0" y="410.0" width="100.0"
-               height="100.0" parentComponent="Panel2" text="Reverb Size" fontName="Heebo-Light"
-               fontSize="19.0"/>
-    <Component type="ScriptButton" id="ScriptButton9" x="790.0" y="390.0" width="130.0"
-               height="50.0" parentComponent="Panel2" filmstripImage="{PROJECT_FOLDER}btn1.png"
-               processorId="Silent Synth1" parameterId="Enabled">
-      <Component type="ScriptLabel" id="ScriptLabel94" x="-10.0" y="-10.0" width="140.0"
-                 height="60.0" parentComponent="ScriptButton9" text="Enable" editable="0"
-                 fontName="Heebo-Light" fontSize="19.0"/>
-    </Component>
+    <Component type="ScriptFloatingTile" id="ScriptFloatingTile16" x="320.0"
+               y="410.0" width="600.0" height="70.0" parentComponent="Panel2"
+               ContentType="Keyboard" bgColour="4284769380" itemColour="452984831"
+               itemColour2="4294967295" textColour="0" Data="{&#10;  &quot;KeyWidth&quot;: 14.0,&#10;  &quot;DisplayOctaveNumber&quot;: false,&#10;  &quot;LowKey&quot;: 9,&#10;  &quot;HiKey&quot;: 127,&#10;  &quot;CustomGraphics&quot;: false,&#10;  &quot;DefaultAppearance&quot;: true,&#10;  &quot;BlackKeyRatio&quot;: 0.699999988079071,&#10;  &quot;ToggleMode&quot;: false,&#10;  &quot;MidiChannel&quot;: 1,&#10;  &quot;UseVectorGraphics&quot;: true,&#10;  &quot;UseFlatStyle&quot;: false,&#10;  &quot;MPEKeyboard&quot;: false,&#10;  &quot;MPEStartChannel&quot;: 2,&#10;  &quot;MPEEndChannel&quot;: 16&#10;}"/>
   </Component>
   <Component type="ScriptPanel" id="Panel3" x="30.0" y="90.0" width="970.0"
              height="490.0" borderRadius="0.0" bgColour="16777215" itemColour="0"
@@ -505,7 +385,8 @@
                defaultValue="0.5"/>
     <Component type="ScriptSlider" id="ScriptSlider60" x="0.0" y="200.0" width="50.0"
                height="40.0" parentComponent="Panel3" filmstripImage="{PROJECT_FOLDER}konb.png"
-               numStrips="31.0" scaleFactor="0.5" processorId="Script FX2" parameterId="Grain Size"/>
+               numStrips="31.0" scaleFactor="0.5" processorId="Script FX2" parameterId="Grain Size"
+               stepSize="0.1000000014901161" min="20.0" max="800.0" middlePosition="50.0"/>
     <Component type="ScriptSlider" id="ScriptSlider61" x="0.0" y="250.0" width="50.0"
                height="40.0" parentComponent="Panel3" filmstripImage="{PROJECT_FOLDER}konb.png"
                numStrips="31.0" scaleFactor="0.5" processorId="Script FX2" parameterId="Density"/>
@@ -812,19 +693,90 @@
   <Component type="ScriptPanel" id="Panel5" x="30.0" y="90.0" width="960.0"
              height="480.0" borderRadius="0.0" bgColour="16777215" itemColour="0"
              itemColour2="0" textColour="16777215" visible="0">
-    <Component type="ScriptFloatingTile" id="ScriptFloatingTile15" x="0.0" y="50.0"
-               width="960.0" height="410.0" parentComponent="Panel5" ContentType="CustomSettings"
-               bgColour="4278190080" itemColour="0" itemColour2="0" Data="{&#10;  &quot;Driver&quot;: true,&#10;  &quot;Device&quot;: true,&#10;  &quot;Output&quot;: true,&#10;  &quot;BufferSize&quot;: true,&#10;  &quot;SampleRate&quot;: true,&#10;  &quot;GlobalBPM&quot;: true,&#10;  &quot;StreamingMode&quot;: true,&#10;  &quot;ScaleFactor&quot;: true,&#10;  &quot;VoiceAmountMultiplier&quot;: true,&#10;  &quot;ClearMidiCC&quot;: true,&#10;  &quot;SampleLocation&quot;: true,&#10;  &quot;DebugMode&quot;: true,&#10;  &quot;UseOpenGL&quot;: true,&#10;  &quot;ScaleFactorList&quot;: [&#10;    0.5,&#10;    0.75,&#10;    1.0,&#10;    1.25,&#10;    1.5,&#10;    2.0&#10;  ]&#10;}"/>
-    <Component type="ScriptFloatingTile" id="ScriptFloatingTile16" x="0.0" y="50.0"
-               width="330.0" height="410.0" parentComponent="Panel5" ContentType="MidiSources"
-               bgColour="4278190080" itemColour="0" itemColour2="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel97" x="0.0" y="0.0" width="180.0"
-               height="40.0" parentComponent="Panel5" fontName="Heebo-Light"
-               fontSize="22.0" alignment="left" text="GLOBAL MIDI SETTINGS"
-               editable="0"/>
-    <Component type="ScriptLabel" id="ScriptLabel98" x="370.0" y="-10.0" width="200.0"
-               height="60.0" parentComponent="Panel5" text="GLOBAL AUDIO SETTINGS"
-               editable="0" fontName="Heebo-Light" fontSize="22.0"/>
+    <Component type="ScriptPanel" id="ScriptPanel1" x="0.0" y="0.0" width="90.0"
+               height="480.0" parentComponent="Panel5" itemColour="352321535"
+               bgColour="4294967295" itemColour2="436207615" textColour="1493172223">
+      <Component type="ScriptSlider" id="ScriptSlider77" x="10.0" y="240.0" width="60.0"
+                 height="240.0" parentComponent="ScriptPanel1" filmstripImage="{PROJECT_FOLDER}minimal_white.png"
+                 numStrips="100.0" processorId="Audio Loop Player1" parameterId="Gain"/>
+      <Component type="ScriptLabel" id="ScriptLabel97" x="0.0" y="450.0" width="90.0"
+                 height="20.0" parentComponent="ScriptPanel1" editable="0" fontName="Heebo-Light"
+                 fontSize="19.0" text="Layer1"/>
+      <Component type="ScriptSlider" id="ScriptSlider82" x="20.0" y="130.0" width="60.0"
+                 height="60.0" parentComponent="ScriptPanel1" filmstripImage="{PROJECT_FOLDER}konb.png"
+                 numStrips="31.0" scaleFactor="0.800000011920929" mode="Pan" min="-100.0"
+                 max="100.0" suffix="L" middlePosition="0.0" processorId="Audio Loop Player1"
+                 parameterId="Balance"/>
+      <Component type="ScriptLabel" id="ScriptLabel102" x="0.0" y="190.0" width="90.0"
+                 height="30.0" parentComponent="ScriptPanel1" text="PAN" fontName="Heebo-Light"
+                 fontSize="19.0" editable="0"/>
+    </Component>
+    <Component type="ScriptPanel" id="ScriptPanel2" x="110.0" y="0.0" width="90.0"
+               height="480.0" parentComponent="Panel5" bgColour="4294967295"
+               textColour="1493172223" itemColour2="436207615" itemColour="352321535">
+      <Component type="ScriptLabel" id="ScriptLabel98" x="0.0" y="440.0" width="90.0"
+                 height="40.0" parentComponent="ScriptPanel2" editable="0" fontName="Heebo-Light"
+                 fontSize="19.0" text="Layer2"/>
+      <Component type="ScriptSlider" id="ScriptSlider78" x="10.0" y="240.0" width="60.0"
+                 height="210.0" parentComponent="ScriptPanel2" filmstripImage="{PROJECT_FOLDER}minimal_white.png"
+                 numStrips="100.0" processorId="Audio Loop Player2" parameterId="Gain"/>
+      <Component type="ScriptSlider" id="ScriptSlider83" x="20.0" y="130.0" width="60.0"
+                 height="70.0" parentComponent="ScriptPanel2" filmstripImage="{PROJECT_FOLDER}konb.png"
+                 numStrips="31.0" scaleFactor="0.800000011920929" processorId="Audio Loop Player2"
+                 parameterId="Balance" mode="Pan" min="-100.0" max="100.0" stepSize="1.0"
+                 suffix="L" middlePosition="0.0"/>
+      <Component type="ScriptLabel" id="ScriptLabel104" x="0.0" y="180.0" width="90.0"
+                 height="50.0" parentComponent="ScriptPanel2" text="PAN" fontName="Heebo-Light"
+                 fontSize="19.0" editable="0"/>
+    </Component>
+    <Component type="ScriptPanel" id="ScriptPanel3" x="220.0" y="0.0" width="90.0"
+               height="480.0" parentComponent="Panel5" itemColour="352321535"
+               itemColour2="436207615" textColour="1493172223" bgColour="4294967295">
+      <Component type="ScriptLabel" id="ScriptLabel99" x="0.0" y="440.0" width="90.0"
+                 height="40.0" parentComponent="ScriptPanel3" editable="0" fontName="Heebo-Light"
+                 fontSize="19.0" text="Grain1"/>
+      <Component type="ScriptSlider" id="ScriptSlider79" x="10.0" y="240.0" width="70.0"
+                 height="230.0" parentComponent="ScriptPanel3" filmstripImage="{PROJECT_FOLDER}minimal_white.png"
+                 numStrips="100.0" processorId="Silent Synth1" parameterId="Gain"/>
+      <Component type="ScriptSlider" id="ScriptSlider84" x="20.0" y="130.0" width="70.0"
+                 height="70.0" parentComponent="ScriptPanel3" filmstripImage="{PROJECT_FOLDER}konb.png"
+                 numStrips="31.0" scaleFactor="0.800000011920929"/>
+      <Component type="ScriptLabel" id="ScriptLabel105" x="0.0" y="180.0" width="90.0"
+                 height="50.0" parentComponent="ScriptPanel3" text="PAN" fontName="Heebo-Light"
+                 fontSize="19.0" editable="0"/>
+    </Component>
+    <Component type="ScriptPanel" id="ScriptPanel4" x="330.0" y="0.0" width="90.0"
+               height="480.0" parentComponent="Panel5" textColour="1493172223"
+               itemColour2="436207615" itemColour="352321535" bgColour="4294967295">
+      <Component type="ScriptSlider" id="ScriptSlider80" x="10.0" y="240.0" width="60.0"
+                 height="230.0" parentComponent="ScriptPanel4" filmstripImage="{PROJECT_FOLDER}minimal_white.png"
+                 numStrips="100.0" processorId="Silent Synth2" parameterId="Gain"/>
+      <Component type="ScriptLabel" id="ScriptLabel100" x="0.0" y="440.0" width="90.0"
+                 height="40.0" parentComponent="ScriptPanel4" editable="0" fontName="Heebo-Light"
+                 fontSize="19.0" text="Grain2"/>
+      <Component type="ScriptSlider" id="ScriptSlider85" x="20.0" y="130.0" width="70.0"
+                 height="70.0" parentComponent="ScriptPanel4" filmstripImage="{PROJECT_FOLDER}konb.png"
+                 numStrips="31.0" scaleFactor="0.800000011920929"/>
+      <Component type="ScriptLabel" id="ScriptLabel106" x="0.0" y="180.0" width="90.0"
+                 height="50.0" parentComponent="ScriptPanel4" text="PAN" fontName="Heebo-Light"
+                 fontSize="19.0" editable="0"/>
+    </Component>
+    <Component type="ScriptPanel" id="ScriptPanel5" x="440.0" y="0.0" width="90.0"
+               height="480.0" parentComponent="Panel5" textColour="1493172223"
+               itemColour="352321535" itemColour2="436207615" bgColour="4294967295">
+      <Component type="ScriptSlider" id="ScriptSlider81" x="10.0" y="240.0" width="60.0"
+                 height="230.0" parentComponent="ScriptPanel5" filmstripImage="{PROJECT_FOLDER}minimal_white.png"
+                 numStrips="100.0" processorId="Waveform Generator1" parameterId="Gain"/>
+      <Component type="ScriptLabel" id="ScriptLabel101" x="0.0" y="440.0" width="90.0"
+                 height="40.0" parentComponent="ScriptPanel5" editable="0" fontName="Heebo-Light"
+                 fontSize="19.0" text="Waveform"/>
+      <Component type="ScriptSlider" id="ScriptSlider86" x="20.0" y="130.0" width="60.0"
+                 height="70.0" parentComponent="ScriptPanel5" filmstripImage="{PROJECT_FOLDER}konb.png"
+                 numStrips="31.0" scaleFactor="0.800000011920929"/>
+      <Component type="ScriptLabel" id="ScriptLabel107" x="0.0" y="180.0" width="90.0"
+                 height="50.0" parentComponent="ScriptPanel5" text="PAN" fontName="Heebo-Light"
+                 fontSize="19.0" editable="0"/>
+    </Component>
   </Component>
   <Component type="ScriptLabel" id="logo" x="50.0" y="22.0" width="120.0"
              height="30.0" text="LayerEngine" itemColour2="1118481" fontName="Heebo-Light"
@@ -833,13 +785,12 @@
              width="320.0" height="20.0" ContentType="TooltipPanel" bgColour="3684408"
              itemColour="872415231" itemColour2="0" textColour="3439329279"
              Font="Heebo-Light" FontSize="16.0"/>
-  <Component type="ScriptImage" id="ScriptImage2" x="960.0" y="560.0" width="50.0"
-             height="40.0" fileName="{PROJECT_FOLDER}gplv3.png" alpha="0.3600000143051147"
-             scale="0.1000000014901161"/>
+  <Component type="ScriptImage" id="ScriptImage2" x="950.0" y="557.0" width="70.0"
+             height="40.0" fileName="{PROJECT_FOLDER}gplv3.png" scale="0.1000000014901161"/>
   <Component type="ScriptFloatingTile" id="ScriptFloatingTile14" x="870.0"
-             y="25.0" width="130.0" height="10.0" ContentType="MatrixPeakMeter"
-             bgColour="0" itemColour="2734686207" itemColour2="2113929215"
-             Data="{&#10;  &quot;ProcessorId&quot;: &quot;le-new-back&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false,&#10;  &quot;SegmentLedSize&quot;: 0.0,&#10;  &quot;UpDecayTime&quot;: 0.0,&#10;  &quot;DownDecayTime&quot;: 0.0,&#10;  &quot;UseSourceChannels&quot;: false,&#10;  &quot;SkewFactor&quot;: 1.0,&#10;  &quot;PaddingSize&quot;: 1.0,&#10;  &quot;ShowMaxPeak&quot;: 1.0,&#10;  &quot;ChannelIndexes&quot;: null&#10;}"
+             y="25.0" width="130.0" height="20.0" ContentType="MatrixPeakMeter"
+             bgColour="0" itemColour="4294967295" itemColour2="2113929215"
+             Data="{&#10;  &quot;ProcessorId&quot;: &quot;le-new-back&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false,&#10;  &quot;SegmentLedSize&quot;: 1,&#10;  &quot;UpDecayTime&quot;: 0.0,&#10;  &quot;DownDecayTime&quot;: 0.0,&#10;  &quot;UseSourceChannels&quot;: false,&#10;  &quot;SkewFactor&quot;: 1.0,&#10;  &quot;PaddingSize&quot;: 1.0,&#10;  &quot;ShowMaxPeak&quot;: 1.0,&#10;  &quot;ChannelIndexes&quot;: [&#10;    0,&#10;    1&#10;  ]&#10;}"
              itemColour3="2080374783"/>
   <Component type="ScriptFloatingTile" id="ScriptFloatingTile17" x="10.0"
              y="584.0" width="10.0" height="10.0" ContentType="ActivityLed"
