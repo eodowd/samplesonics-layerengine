@@ -54,7 +54,7 @@
              itemColour="0" itemColour2="0" Font="Heebo-Light"/>
   <Component type="ScriptPanel" id="Panel0" x="30.0" y="90.0" width="960.0"
              height="480.0" borderRadius="0.0" bgColour="16777215" itemColour="0"
-             itemColour2="0" textColour="16777215">
+             itemColour2="0" textColour="16777215" visible="0">
     <Component type="ScriptAudioWaveform" id="ScriptAudioWaveform1" x="0.0"
                y="0.0" width="960.0" height="130.0" parentComponent="Panel0"
                processorId="Audio Loop Player1" textColour="0" bgColour="0"
@@ -149,11 +149,6 @@
                width="280.0" height="70.0" parentComponent="Panel0" ContentType="AHDSRGraph"
                bgColour="0" itemColour="1711276031" itemColour2="16777215" textColour="0"
                Data="{&#10;  &quot;ProcessorId&quot;: &quot;AHDSR Envelope1&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"/>
-    <Component type="ScriptFloatingTile" id="ScriptFloatingTile2" x="300.0"
-               y="410.0" width="610.0" height="70.0" parentComponent="Panel0"
-               ContentType="Keyboard" bgColour="4284769380" itemColour="452984831"
-               itemColour2="4294967295" Data="{&#10;  &quot;KeyWidth&quot;: 14.0,&#10;  &quot;DisplayOctaveNumber&quot;: true,&#10;  &quot;LowKey&quot;: 9,&#10;  &quot;HiKey&quot;: 127,&#10;  &quot;CustomGraphics&quot;: false,&#10;  &quot;DefaultAppearance&quot;: true,&#10;  &quot;BlackKeyRatio&quot;: 0.699999988079071,&#10;  &quot;ToggleMode&quot;: false,&#10;  &quot;MidiChannel&quot;: 1,&#10;  &quot;UseVectorGraphics&quot;: true,&#10;  &quot;UseFlatStyle&quot;: false,&#10;  &quot;MPEKeyboard&quot;: false,&#10;  &quot;MPEStartChannel&quot;: 2,&#10;  &quot;MPEEndChannel&quot;: 16&#10;}"
-               itemColour3="1310509276" textColour="0"/>
   </Component>
   <Component type="ScriptPanel" id="Panel1" x="30.0" y="90.0" width="960.0"
              height="480.0" borderRadius="0.0" bgColour="16777215" itemColour="0"
@@ -242,14 +237,10 @@
                y="160.0" width="680.0" height="230.0" parentComponent="Panel1"
                ContentType="DraggableFilterPanel" bgColour="0" itemColour="2164260863"
                itemColour2="855638016" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Parametriq EQLOOPPLAYER2&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"/>
-    <Component type="ScriptFloatingTile" id="ScriptFloatingTile15" x="300.0"
-               y="410.0" width="610.0" height="70.0" parentComponent="Panel1"
-               ContentType="Keyboard" bgColour="4284769380" itemColour="452984831"
-               itemColour2="4294967295" textColour="0" Data="{&#10;  &quot;KeyWidth&quot;: 14.0,&#10;  &quot;DisplayOctaveNumber&quot;: false,&#10;  &quot;LowKey&quot;: 9,&#10;  &quot;HiKey&quot;: 127,&#10;  &quot;CustomGraphics&quot;: false,&#10;  &quot;DefaultAppearance&quot;: true,&#10;  &quot;BlackKeyRatio&quot;: 0.699999988079071,&#10;  &quot;ToggleMode&quot;: false,&#10;  &quot;MidiChannel&quot;: 1,&#10;  &quot;UseVectorGraphics&quot;: true,&#10;  &quot;UseFlatStyle&quot;: false,&#10;  &quot;MPEKeyboard&quot;: false,&#10;  &quot;MPEStartChannel&quot;: 2,&#10;  &quot;MPEEndChannel&quot;: 16&#10;}"/>
   </Component>
   <Component type="ScriptPanel" id="Panel2" x="30.0" y="90.0" width="970.0"
              height="480.0" borderRadius="0.0" bgColour="16777215" itemColour="0"
-             itemColour2="0" textColour="16777215" visible="0">
+             itemColour2="0" textColour="16777215">
     <Component type="ScriptAudioWaveform" id="ScriptAudioWaveform3" x="0.0"
                y="0.0" width="960.0" height="130.0" parentComponent="Panel2"
                processorId="Script FX1" itemColour2="4294967295" itemColour="0"
@@ -367,10 +358,6 @@
     <Component type="ScriptLabel" id="ScriptLabel54" x="-20.0" y="390.0" width="120.0"
                height="40.0" parentComponent="Panel2" text="Velocity Table"
                editable="0" fontName="Heebo-Light" fontSize="19.0"/>
-    <Component type="ScriptFloatingTile" id="ScriptFloatingTile16" x="320.0"
-               y="410.0" width="600.0" height="70.0" parentComponent="Panel2"
-               ContentType="Keyboard" bgColour="4284769380" itemColour="452984831"
-               itemColour2="4294967295" textColour="0" Data="{&#10;  &quot;KeyWidth&quot;: 14.0,&#10;  &quot;DisplayOctaveNumber&quot;: false,&#10;  &quot;LowKey&quot;: 9,&#10;  &quot;HiKey&quot;: 127,&#10;  &quot;CustomGraphics&quot;: false,&#10;  &quot;DefaultAppearance&quot;: true,&#10;  &quot;BlackKeyRatio&quot;: 0.699999988079071,&#10;  &quot;ToggleMode&quot;: false,&#10;  &quot;MidiChannel&quot;: 1,&#10;  &quot;UseVectorGraphics&quot;: true,&#10;  &quot;UseFlatStyle&quot;: false,&#10;  &quot;MPEKeyboard&quot;: false,&#10;  &quot;MPEStartChannel&quot;: 2,&#10;  &quot;MPEEndChannel&quot;: 16&#10;}"/>
   </Component>
   <Component type="ScriptPanel" id="Panel3" x="30.0" y="90.0" width="970.0"
              height="490.0" borderRadius="0.0" bgColour="16777215" itemColour="0"
@@ -695,7 +682,7 @@
              itemColour2="0" textColour="16777215" visible="0">
     <Component type="ScriptPanel" id="ScriptPanel1" x="0.0" y="0.0" width="90.0"
                height="480.0" parentComponent="Panel5" itemColour="352321535"
-               bgColour="4294967295" itemColour2="436207615" textColour="1493172223">
+               bgColour="4294967295" itemColour2="436207615" textColour="721420287">
       <Component type="ScriptSlider" id="ScriptSlider77" x="10.0" y="240.0" width="60.0"
                  height="240.0" parentComponent="ScriptPanel1" filmstripImage="{PROJECT_FOLDER}minimal_white.png"
                  numStrips="100.0" processorId="Audio Loop Player1" parameterId="Gain"/>
@@ -713,7 +700,7 @@
     </Component>
     <Component type="ScriptPanel" id="ScriptPanel2" x="110.0" y="0.0" width="90.0"
                height="480.0" parentComponent="Panel5" bgColour="4294967295"
-               textColour="1493172223" itemColour2="436207615" itemColour="352321535">
+               textColour="721420287" itemColour2="436207615" itemColour="352321535">
       <Component type="ScriptLabel" id="ScriptLabel98" x="0.0" y="440.0" width="90.0"
                  height="40.0" parentComponent="ScriptPanel2" editable="0" fontName="Heebo-Light"
                  fontSize="19.0" text="Layer2"/>
@@ -731,7 +718,7 @@
     </Component>
     <Component type="ScriptPanel" id="ScriptPanel3" x="220.0" y="0.0" width="90.0"
                height="480.0" parentComponent="Panel5" itemColour="352321535"
-               itemColour2="436207615" textColour="1493172223" bgColour="4294967295">
+               itemColour2="436207615" textColour="721420287" bgColour="4294967295">
       <Component type="ScriptLabel" id="ScriptLabel99" x="0.0" y="440.0" width="90.0"
                  height="40.0" parentComponent="ScriptPanel3" editable="0" fontName="Heebo-Light"
                  fontSize="19.0" text="Grain1"/>
@@ -746,7 +733,7 @@
                  fontSize="19.0" editable="0"/>
     </Component>
     <Component type="ScriptPanel" id="ScriptPanel4" x="330.0" y="0.0" width="90.0"
-               height="480.0" parentComponent="Panel5" textColour="1493172223"
+               height="480.0" parentComponent="Panel5" textColour="721420287"
                itemColour2="436207615" itemColour="352321535" bgColour="4294967295">
       <Component type="ScriptSlider" id="ScriptSlider80" x="10.0" y="240.0" width="60.0"
                  height="230.0" parentComponent="ScriptPanel4" filmstripImage="{PROJECT_FOLDER}minimal_white.png"
@@ -762,7 +749,7 @@
                  fontSize="19.0" editable="0"/>
     </Component>
     <Component type="ScriptPanel" id="ScriptPanel5" x="440.0" y="0.0" width="90.0"
-               height="480.0" parentComponent="Panel5" textColour="1493172223"
+               height="480.0" parentComponent="Panel5" textColour="721420287"
                itemColour="352321535" itemColour2="436207615" bgColour="4294967295">
       <Component type="ScriptSlider" id="ScriptSlider81" x="10.0" y="240.0" width="60.0"
                  height="230.0" parentComponent="ScriptPanel5" filmstripImage="{PROJECT_FOLDER}minimal_white.png"
@@ -786,7 +773,8 @@
              itemColour="872415231" itemColour2="0" textColour="3439329279"
              Font="Heebo-Light" FontSize="16.0"/>
   <Component type="ScriptImage" id="ScriptImage2" x="950.0" y="557.0" width="70.0"
-             height="40.0" fileName="{PROJECT_FOLDER}gplv3.png" scale="0.1000000014901161"/>
+             height="40.0" fileName="{PROJECT_FOLDER}gplv3.png" scale="0.1000000014901161"
+             alpha="0.3"/>
   <Component type="ScriptFloatingTile" id="ScriptFloatingTile14" x="870.0"
              y="25.0" width="130.0" height="20.0" ContentType="MatrixPeakMeter"
              bgColour="0" itemColour="4294967295" itemColour2="2113929215"

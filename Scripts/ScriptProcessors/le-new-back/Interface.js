@@ -1,10 +1,9 @@
 Content.makeFrontInterface(1024, 600);
 
 const var ScriptAudioWaveform3 = Content.getComponent("ScriptAudioWaveform3");
-Console.print(ScriptAudioWaveform3.getRangeEnd());
 
 const var ScriptFX1 = Synth.getAudioSampleProcessor("Script FX1");
-Console.print(ScriptFX1.getSampleLength());
+const var ScriptFX2 = Synth.getAudioSampleProcessor("Script FX2");
 const var NUM_BUTTONS = 6;
 const var buttons = [];
 const var panels = [];
@@ -29,7 +28,6 @@ inline function onButtonControl(component, value)
 }
 
 
-
 onButtonControl(buttons[0], true);
 
 
@@ -37,15 +35,20 @@ Engine.loadFontAs("{PROJECT_FOLDER}fonts/Heebo-Light.ttf", "Heebo-Light");
 Engine.setGlobalFont("Heebo-Light");
 
 
-
-
-
 inline function onScriptAudioWaveform3Control(component, value)
 {
 	Engine.allNotesOff();
+	if (ScriptFX1.getSampleLength() < 352800){
+		//Console.print("bad");
+		ScriptFX1.setAttribute(10, 1);
 	
-
 	
+	}
+	if (ScriptFX1.getSampleLength() >= 352800){
+		//Console.print("good");
+		ScriptFX1.setAttribute(10, 0);
+	
+	}
 	
 };
 
@@ -55,6 +58,18 @@ Content.getComponent("ScriptAudioWaveform3").setControlCallback(onScriptAudioWav
 inline function onScriptAudioWaveform4Control(component, value)
 {
 	Engine.allNotesOff();
+	if (ScriptFX2.getSampleLength() < 352800){
+	
+		//Console.print("bad");
+		ScriptFX2.setAttribute(10, 0);
+	
+	
+	}
+	if (ScriptFX2.getSampleLength() >= 352800){
+		//Console.print("good");
+		ScriptFX2.setAttribute(10, 1);
+	
+	}
 };
 
 Content.getComponent("ScriptAudioWaveform4").setControlCallback(onScriptAudioWaveform4Control);
@@ -77,7 +92,29 @@ Content.getComponent("ScriptAudioWaveform2").setControlCallback(onScriptAudioWav
 
 function onNoteOn()
 {
-	
+if (ScriptFX1.getSampleLength() < 352800){
+	//Console.print("bad");
+	ScriptFX1.setAttribute(10, 1);
+
+
+}
+if (ScriptFX1.getSampleLength() >= 352800){
+	//Console.print("good");
+	ScriptFX1.setAttribute(10, 0);
+
+}
+if (ScriptFX2.getSampleLength() < 352800){
+
+	//Console.print("bad");
+	ScriptFX2.setAttribute(10, 1);
+
+
+}
+if (ScriptFX2.getSampleLength() >= 352800){
+	//Console.print("good");
+	ScriptFX2.setAttribute(10, 0);
+
+}
 }
  function onNoteOff()
 {

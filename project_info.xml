@@ -33,4 +33,9 @@
   <AdminPermissions value="No"/>
   <EmbedUserPresets value="Yes"/>
   <EnableGlobalPreprocessor value="No"/>
+  <VST3Category value=""/>
+  <OverwriteOldUserPresets value="No"/>
+  <UseGlobalAppDataFolderWindows value="No"/>
+  <UseGlobalAppDataFolderMacOS value="No"/>
+  <DefaultUserPreset value=""/>
 </ProjectSettings>
